@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.python-version
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Packaging / build outputs
+build/
+dist/
+*.egg-info/
+*.spec
+
+# Local diagnostics and generated hardware captures
+debug_packets.txt
+detected_tablets.txt
+*.log
+
+# Local tool indexes and agent work artifacts
+.atlas/
+.agents/work_reports/
+AGENTS.md
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
