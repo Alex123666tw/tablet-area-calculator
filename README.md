@@ -17,7 +17,7 @@ OTD Area Calculator 是一個 Windows 桌面工具，用來協助 osu! 玩家根
 
 ## 功能
 
-- 自動偵測已知 Wacom 手寫板型號。
+- 內建約 250 款手寫板規格（資料來自 OpenTabletDriver），自動辨識型號與尺寸。
 - 透過 HID Raw Mode 讀取筆尖座標與壓力。
 - 多執行緒背景讀取，並自動校準原始座標邊界。
 - 可自動偵測 osu! 視窗並開始/停止錄製。
@@ -30,17 +30,13 @@ OTD Area Calculator 是一個 Windows 桌面工具，用來協助 osu! 玩家根
 
 **已實機驗證：**
 
-- **Wacom Intuos S (CTL-4100)** — 唯一在真實硬體上測試過的型號。
+- **Wacom Intuos S (CTL-4100)** — 唯一在真實硬體上測試過的型號，座標讀取與計算都驗證過。
 
-**未驗證**（程式仍可偵測並提供估計值，但封包格式未經實機確認，數值僅供參考，歡迎回報）：
+**可偵測（規格正確，但未驗證）：**
 
-- Wacom Intuos M (CTL-6100)
-- Wacom Intuos S BT (CTL-4100WL)
-- Wacom One S (CTL-472)
-- Wacom One M (CTL-672)
-- 其他 Wacom 型號（套用通用估計值）
-
-偵測到非 CTL-4100 型號時，程式介面會顯示未驗證警告，計算結果也會附註提醒。
+- 內建約 250 款手寫板的規格（型號、VID/PID、尺寸、最大座標），資料來自 OpenTabletDriver，涵蓋 Wacom、Huion、XP-Pen、UGEE、Gaomon、VEIKK 等品牌。
+- 這些型號偵測得到、實體尺寸正確，但**封包格式未經實機確認**：目前實際座標讀取僅對 Wacom raw 格式有效，其他品牌的通用解析尚在進行中。
+- 偵測到非 CTL-4100 型號時，介面會顯示未驗證警告，計算結果也會附註提醒，歡迎回報實測結果。
 
 限制：
 
@@ -93,10 +89,13 @@ python -m pip install -r requirements-dev.txt
 
 ```text
 otd_area_calculator.py         # 主程式
+tablet_db.json                 # 手寫板規格資料庫（由 OTD 設定產生）
+tools/import_otd_configs.py    # 從 OTD 設定重新產生 tablet_db.json
 requirements.txt               # 執行期依賴
 requirements-dev.txt           # 開發/打包依賴
 build_exe.bat                  # PyInstaller 打包腳本
 tests/                         # 單元測試
+NOTICE                         # 第三方資料出處與授權
 ```
 
 ## 隱私與資料
@@ -115,4 +114,6 @@ python -m pytest -q
 
 ## 授權
 
-本專案以 MIT License 釋出。公開前請確認 `LICENSE` 中的 copyright 名稱符合你要使用的作者或組織名稱。
+本專案程式碼以 MIT License 釋出。公開前請確認 `LICENSE` 中的 copyright 名稱符合你要使用的作者或組織名稱。
+
+`tablet_db.json` 內的手寫板參數衍生自 OpenTabletDriver（LGPL-3.0），僅取用硬體事實參數（型號、VID/PID、尺寸、座標範圍），詳見 `NOTICE`。

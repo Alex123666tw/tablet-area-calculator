@@ -31,6 +31,7 @@ python -m PyInstaller --onefile ^
     --name "OTD_Area_Calculator" ^
     --icon=NONE ^
     --add-data "requirements.txt;." ^
+    --add-data "tablet_db.json;." ^
     --hidden-import PySide6.QtCore ^
     --hidden-import PySide6.QtGui ^
     --hidden-import PySide6.QtWidgets ^

@@ -1,0 +1,3811 @@
+{
+ "_count": 249,
+ "_source": "Derived from OpenTabletDriver (LGPL-3.0) — https://github.com/OpenTabletDriver/OpenTabletDriver",
+ "tablets": {
+  "10429,10498": {
+   "height_mm": 158.75,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 16383,
+   "max_x": 50800,
+   "max_y": 31750,
+   "name": "UGEE M908",
+   "product_id": 10498,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "10429,10499": {
+   "height_mm": 158.75,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 50800,
+   "max_y": 31750,
+   "name": "UGEE M808",
+   "product_id": 10499,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "10429,10500": {
+   "height_mm": 89.99,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 16383,
+   "max_x": 31998,
+   "max_y": 17998,
+   "name": "XP-Pen Deco 640 (IT640)",
+   "product_id": 10500,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 159.99
+  },
+  "10429,10508": {
+   "height_mm": 191.995,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 16383,
+   "max_x": 68199,
+   "max_y": 38399,
+   "name": "UGEE UE16",
+   "product_id": 10508,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 340.995
+  },
+  "10429,11": {
+   "height_mm": 165.24,
+   "init_strings": [],
+   "input_report_length": 8,
+   "max_pressure": 8191,
+   "max_x": 29376,
+   "max_y": 16524,
+   "name": "XP-Pen Artist 13.3",
+   "product_id": 11,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 293.76
+  },
+  "10429,113": {
+   "height_mm": 127.0,
+   "init_strings": [],
+   "input_report_length": 8,
+   "max_pressure": 8191,
+   "max_x": 40640,
+   "max_y": 25400,
+   "name": "XP-Pen Star 05 V3",
+   "product_id": 113,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 203.2
+  },
+  "10429,117": {
+   "height_mm": 76.2,
+   "init_strings": [],
+   "input_report_length": 8,
+   "max_pressure": 2047,
+   "max_x": 45720,
+   "max_y": 29210,
+   "name": "XP-Pen Star G430",
+   "product_id": 117,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 101.6
+  },
+  "10429,119": {
+   "height_mm": 152.4,
+   "init_strings": [],
+   "input_report_length": 8,
+   "max_pressure": 8191,
+   "max_x": 50800,
+   "max_y": 30480,
+   "name": "XP-Pen Star 03 Pro",
+   "product_id": 119,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "10429,12": {
+   "height_mm": 194.61,
+   "init_strings": [],
+   "input_report_length": 8,
+   "max_pressure": 8191,
+   "max_x": 34419,
+   "max_y": 19461,
+   "name": "XP-Pen Artist 15.6",
+   "product_id": 12,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 344.19
+  },
+  "10429,120": {
+   "height_mm": 152.4,
+   "init_strings": [],
+   "input_report_length": 8,
+   "max_pressure": 8191,
+   "max_x": 50800,
+   "max_y": 30480,
+   "name": "XP-Pen Star 06",
+   "product_id": 120,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "10429,148": {
+   "height_mm": 100.0,
+   "init_strings": [
+    100,
+    110
+   ],
+   "input_report_length": 8,
+   "max_pressure": 8191,
+   "max_x": 32000,
+   "max_y": 20000,
+   "name": "XP-Pen Star G640",
+   "product_id": 148,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 160.0
+  },
+  "10429,150": {
+   "height_mm": 142.875,
+   "init_strings": [],
+   "input_report_length": 8,
+   "max_pressure": 8191,
+   "max_x": 50800,
+   "max_y": 28575,
+   "name": "XP-Pen Deco 03",
+   "product_id": 150,
+   "report_parser": "XP_PenDeco03ReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "10429,2051": {
+   "height_mm": 142.875,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 22352,
+   "max_y": 13970,
+   "name": "XP-Pen Deco 02",
+   "product_id": 2051,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "10429,2058": {
+   "height_mm": 144.18,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 25632,
+   "max_y": 14418,
+   "name": "XP-Pen Artist 12",
+   "product_id": 2058,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 256.32
+  },
+  "10429,20993": {
+   "height_mm": 148.0,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 52324,
+   "max_y": 29600,
+   "name": "XenceLabs Pen Tablet Medium",
+   "product_id": 20993,
+   "report_parser": "XenceLabsReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 261.62
+  },
+  "10429,20996": {
+   "height_mm": 101.0,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 35600,
+   "max_y": 20200,
+   "name": "XenceLabs Pen Tablet Small",
+   "product_id": 20996,
+   "report_parser": "XenceLabsReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 178.0
+  },
+  "10429,2306": {
+   "height_mm": 158.75,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 25400,
+   "max_y": 15875,
+   "name": "XP-Pen Deco 01 V2",
+   "product_id": 2306,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "10429,2308": {
+   "height_mm": 156.995,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 55798,
+   "max_y": 31399,
+   "name": "XP-Pen Deco Pro Medium",
+   "product_id": 2308,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 278.99
+  },
+  "10429,2309": {
+   "height_mm": 158.75,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 50800,
+   "max_y": 31750,
+   "name": "XP-Pen Deco 01 V2 (Variant 2)",
+   "product_id": 2309,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "10429,2310": {
+   "height_mm": 102.995,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 32999,
+   "max_y": 20599,
+   "name": "XP-Pen Star G640S",
+   "product_id": 2310,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 164.995
+  },
+  "10429,2311": {
+   "height_mm": 152.4,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 50800,
+   "max_y": 30480,
+   "name": "XP-Pen Star 03",
+   "product_id": 2311,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "10429,2313": {
+   "height_mm": 129.54,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 46024,
+   "max_y": 25908,
+   "name": "XP-Pen Deco Pro Small",
+   "product_id": 2313,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 230.12
+  },
+  "10429,2317": {
+   "height_mm": 193.59,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 34416,
+   "max_y": 19359,
+   "name": "XP-Pen Artist 15.6 Pro",
+   "product_id": 2317,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 344.16
+  },
+  "10429,2320": {
+   "height_mm": 114.3,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 20320,
+   "max_y": 11430,
+   "name": "Adesso Cybertablet K8",
+   "product_id": 2320,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 203.2
+  },
+  "10429,2323": {
+   "height_mm": 76.2,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 10160,
+   "max_y": 7620,
+   "name": "XP-Pen Star G430S V2",
+   "product_id": 2323,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 101.6
+  },
+  "10429,2324": {
+   "height_mm": 99.99,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 15999,
+   "max_y": 9999,
+   "name": "XP-Pen Star G640 (Variant 2)",
+   "product_id": 2324,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 159.99
+  },
+  "10429,2327": {
+   "height_mm": 152.4,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 22860,
+   "max_y": 15240,
+   "name": "XP-Pen Star G960S",
+   "product_id": 2327,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 228.6
+  },
+  "10429,2328": {
+   "height_mm": 152.4,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 22860,
+   "max_y": 15240,
+   "name": "XP-Pen Star G960S Plus",
+   "product_id": 2328,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 228.6
+  },
+  "10429,2330": {
+   "height_mm": 194.61,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 34419,
+   "max_y": 19461,
+   "name": "XP-Pen Artist 15.6",
+   "product_id": 2330,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 344.19
+  },
+  "10429,2331": {
+   "height_mm": 267.78,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 47664,
+   "max_y": 26778,
+   "name": "XP-Pen Artist 22R Pro",
+   "product_id": 2331,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 476.64
+  },
+  "10429,2335": {
+   "height_mm": 144.15,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 25634,
+   "max_y": 14415,
+   "name": "XP-Pen Artist 12 Pro",
+   "product_id": 2335,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 256.34
+  },
+  "10429,2336": {
+   "height_mm": 139.7,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 22352,
+   "max_y": 13970,
+   "name": "XP-Pen Star G960",
+   "product_id": 2336,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 223.52
+  },
+  "10429,2340": {
+   "height_mm": 152.4,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 50800,
+   "max_y": 30480,
+   "name": "UGEE M708 V2",
+   "product_id": 2340,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "10429,2344": {
+   "height_mm": 111.095,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 35560,
+   "max_y": 22219,
+   "name": "XP-Pen Deco mini7",
+   "product_id": 2344,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 177.8
+  },
+  "10429,2345": {
+   "height_mm": 76.2,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 20320,
+   "max_y": 15240,
+   "name": "XP-Pen Deco mini4",
+   "product_id": 2345,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 101.6
+  },
+  "10429,2347": {
+   "height_mm": 165.1,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 29362,
+   "max_y": 16510,
+   "name": "XP-Pen Artist 13.3 Pro",
+   "product_id": 2347,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 293.62
+  },
+  "10429,2348": {
+   "height_mm": 193.545,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 68783,
+   "max_y": 38709,
+   "name": "XP-Pen Innovator 16",
+   "product_id": 2348,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 343.915
+  },
+  "10429,2349": {
+   "height_mm": 296.35,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 105370,
+   "max_y": 59270,
+   "name": "XP-Pen Artist 24 Pro",
+   "product_id": 2349,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 526.85
+  },
+  "10429,2350": {
+   "height_mm": 194.385,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 69123,
+   "max_y": 38877,
+   "name": "XP-Pen Artist Pro 16TP",
+   "product_id": 2350,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 345.615
+  },
+  "10429,2351": {
+   "height_mm": 267.78,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 47664,
+   "max_y": 26778,
+   "name": "XP-Pen Artist 22 (2nd Gen)",
+   "product_id": 2351,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 476.64
+  },
+  "10429,2352": {
+   "height_mm": 76.2,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 24384,
+   "max_y": 15240,
+   "name": "XP-Pen Deco Fun XS (CT430)",
+   "product_id": 2352,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 121.92
+  },
+  "10429,2353": {
+   "height_mm": 101.6,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 32000,
+   "max_y": 20320,
+   "name": "XP-Pen Deco Fun S (CT640)",
+   "product_id": 2353,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 160.0
+  },
+  "10429,2354": {
+   "height_mm": 159.305,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 50901,
+   "max_y": 31861,
+   "name": "XP-Pen Deco Fun L (CT1060)",
+   "product_id": 2354,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 254.505
+  },
+  "10429,2355": {
+   "height_mm": 129.54,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 46024,
+   "max_y": 25908,
+   "name": "XP-Pen Deco Pro SW",
+   "product_id": 2355,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 230.12
+  },
+  "10429,2356": {
+   "height_mm": 156.995,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 55798,
+   "max_y": 31399,
+   "name": "XP-Pen Deco Pro MW",
+   "product_id": 2356,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 278.99
+  },
+  "10429,2357": {
+   "height_mm": 152.4,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 50800,
+   "max_y": 30480,
+   "name": "XP-Pen Deco L",
+   "product_id": 2357,
+   "report_parser": "XP_PenOffsetPressureReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "10429,2358": {
+   "height_mm": 127.0,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 40640,
+   "max_y": 25400,
+   "name": "XP-Pen Deco M",
+   "product_id": 2358,
+   "report_parser": "XP_PenOffsetPressureReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 203.2
+  },
+  "10429,2359": {
+   "height_mm": 99.97,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 31998,
+   "max_y": 19994,
+   "name": "UGEE S640",
+   "product_id": 2359,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 159.99
+  },
+  "10429,2360": {
+   "height_mm": 160.0,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 50800,
+   "max_y": 32000,
+   "name": "UGEE S1060",
+   "product_id": 2360,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "10429,2362": {
+   "height_mm": 296.35,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 105370,
+   "max_y": 59270,
+   "name": "XP-Pen Artist 24",
+   "product_id": 2362,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 526.85
+  },
+  "10429,2363": {
+   "height_mm": 148.055,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 52644,
+   "max_y": 29611,
+   "name": "UGEE U1200",
+   "product_id": 2363,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 263.22
+  },
+  "10429,2364": {
+   "height_mm": 193.57,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 68828,
+   "max_y": 38714,
+   "name": "UGEE U1600",
+   "product_id": 2364,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 344.14
+  },
+  "10429,2370": {
+   "height_mm": 143.0,
+   "init_strings": [],
+   "input_report_length": 14,
+   "max_pressure": 16383,
+   "max_x": 45801,
+   "max_y": 28600,
+   "name": "XP-Pen Deco Pro MW Gen2",
+   "product_id": 2370,
+   "report_parser": "XP_PenGen2ReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 229.005
+  },
+  "10429,2371": {
+   "height_mm": 173.99,
+   "init_strings": [],
+   "input_report_length": 14,
+   "max_pressure": 16383,
+   "max_x": 55798,
+   "max_y": 34798,
+   "name": "XP-Pen Deco Pro LW Gen2",
+   "product_id": 2371,
+   "report_parser": "XP_PenGen2ReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 278.99
+  },
+  "10429,2372": {
+   "height_mm": 229.005,
+   "init_strings": [],
+   "input_report_length": 14,
+   "max_pressure": 16383,
+   "max_x": 76200,
+   "max_y": 45801,
+   "name": "XP-Pen Deco Pro XLW Gen2",
+   "product_id": 2372,
+   "report_parser": "XP_PenGen2ReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 381.0
+  },
+  "10429,2375": {
+   "height_mm": 159.13,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 16383,
+   "max_x": 51196,
+   "max_y": 31826,
+   "name": "XP-Pen Deco 01 V3 (Variant 2)",
+   "product_id": 2375,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 255.98
+  },
+  "10429,2376": {
+   "height_mm": 111.095,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 16383,
+   "max_x": 35595,
+   "max_y": 22219,
+   "name": "XP-Pen Deco mini7 V2",
+   "product_id": 2376,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 177.975
+  },
+  "10429,2377": {
+   "height_mm": 111.095,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 16383,
+   "max_x": 35595,
+   "max_y": 22219,
+   "name": "XP-Pen Deco mini7W V2",
+   "product_id": 2377,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 177.975
+  },
+  "10429,2378": {
+   "height_mm": 148.08,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 52638,
+   "max_y": 29616,
+   "name": "XP-Pen Artist 12 (2nd Gen)",
+   "product_id": 2378,
+   "report_parser": "XP_PenOffsetPressureReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 263.19
+  },
+  "10429,2379": {
+   "height_mm": 191.795,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 68214,
+   "max_y": 38359,
+   "name": "XP-Pen Artist 16 Pro",
+   "product_id": 2379,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 341.07
+  },
+  "10429,2380": {
+   "height_mm": 191.81,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 68198,
+   "max_y": 38362,
+   "name": "XP-Pen Artist 16 (2nd Gen)",
+   "product_id": 2380,
+   "report_parser": "XP_PenOffsetPressureReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 340.99
+  },
+  "10429,2381": {
+   "height_mm": 126.695,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 44902,
+   "max_y": 25339,
+   "name": "XP-Pen Artist 10 (2nd Gen)",
+   "product_id": 2381,
+   "report_parser": "XP_PenOffsetPressureReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 224.51
+  },
+  "10429,2382": {
+   "height_mm": 165.2,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 58760,
+   "max_y": 33040,
+   "name": "XP-Pen Artist 13 (2nd Gen)",
+   "product_id": 2382,
+   "report_parser": "XP_PenOffsetPressureReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 293.8
+  },
+  "10429,2394": {
+   "height_mm": 188.49,
+   "init_strings": [],
+   "input_report_length": 14,
+   "max_pressure": 16383,
+   "max_x": 60320,
+   "max_y": 37698,
+   "name": "XP-Pen Artist Pro 14 (Gen2)",
+   "product_id": 2394,
+   "report_parser": "XP_PenGen2ReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 301.6
+  },
+  "10429,2395": {
+   "height_mm": 215.39,
+   "init_strings": [],
+   "input_report_length": 14,
+   "max_pressure": 16383,
+   "max_x": 68920,
+   "max_y": 43078,
+   "name": "XP-Pen Artist Pro 16 (Gen2)",
+   "product_id": 2395,
+   "report_parser": "XP_PenGen2ReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 344.6
+  },
+  "10429,2396": {
+   "height_mm": 295.91,
+   "init_strings": [],
+   "input_report_length": 14,
+   "max_pressure": 16383,
+   "max_x": 105216,
+   "max_y": 59182,
+   "name": "XP-Pen Artist Pro 24 (Gen2)",
+   "product_id": 2396,
+   "report_parser": "XP_PenGen2ReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 526.08
+  },
+  "10429,2410": {
+   "height_mm": 230.045,
+   "init_strings": [],
+   "input_report_length": 14,
+   "max_pressure": 16383,
+   "max_x": 81793,
+   "max_y": 46009,
+   "name": "XP-Pen Artist Pro 19 (Gen2)",
+   "product_id": 2410,
+   "report_parser": "XP_PenGen2ReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 408.965
+  },
+  "10429,2411": {
+   "height_mm": 267.785,
+   "init_strings": [],
+   "input_report_length": 14,
+   "max_pressure": 16383,
+   "max_x": 95213,
+   "max_y": 53557,
+   "name": "XP-Pen Artist Pro 22 (Gen2)",
+   "product_id": 2411,
+   "report_parser": "XP_PenGen2ReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 476.065
+  },
+  "10429,2414": {
+   "height_mm": 165.225,
+   "init_strings": [],
+   "input_report_length": 14,
+   "max_pressure": 16383,
+   "max_x": 58760,
+   "max_y": 33045,
+   "name": "XP-Pen Artist 13.3 Pro V2",
+   "product_id": 2414,
+   "report_parser": "XP_PenGen2ReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 293.8
+  },
+  "10429,2415": {
+   "height_mm": 191.995,
+   "init_strings": [],
+   "input_report_length": 14,
+   "max_pressure": 16383,
+   "max_x": 68199,
+   "max_y": 38399,
+   "name": "XP-Pen Artist 15.6 Pro V2",
+   "product_id": 2415,
+   "report_parser": "XP_PenGen2ReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 340.995
+  },
+  "10429,6403": {
+   "height_mm": 160.0,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 51100,
+   "max_y": 32000,
+   "name": "Parblo A610 Pro",
+   "product_id": 6403,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 255.5
+  },
+  "10429,66": {
+   "height_mm": 158.75,
+   "init_strings": [],
+   "input_report_length": 8,
+   "max_pressure": 8191,
+   "max_x": 25400,
+   "max_y": 15875,
+   "name": "XP-Pen Deco 01",
+   "product_id": 66,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "10429,97": {
+   "height_mm": 73.025,
+   "init_strings": [],
+   "input_report_length": 8,
+   "max_pressure": 8191,
+   "max_x": 54720,
+   "max_y": 29210,
+   "name": "XP-Pen Star G540 Pro",
+   "product_id": 97,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 136.8
+  },
+  "10429,98": {
+   "height_mm": 152.4,
+   "init_strings": [],
+   "input_report_length": 8,
+   "max_pressure": 8191,
+   "max_x": 50800,
+   "max_y": 30480,
+   "name": "XP-Pen Star 06C",
+   "product_id": 98,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 10429,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "1112,20483": {
+   "height_mm": 114.2873,
+   "init_strings": [
+    "AgQA",
+    "AgIA",
+    "AhAB"
+   ],
+   "input_report_length": 8,
+   "max_pressure": 1023,
+   "max_x": 11999,
+   "max_y": 8999,
+   "name": "Genius G-Pen 560",
+   "product_id": 20483,
+   "report_parser": "GeniusReportParserV2",
+   "vendor_id": 1112,
+   "verified": false,
+   "width_mm": 152.3873
+  },
+  "1112,20496": {
+   "height_mm": 102.4,
+   "init_strings": [
+    "BRIQERIAAAA="
+   ],
+   "input_report_length": 8,
+   "max_pressure": 1023,
+   "max_x": 14050,
+   "max_y": 10240,
+   "name": "Genius i405x",
+   "product_id": 20496,
+   "report_parser": "GeniusReportParser",
+   "vendor_id": 1112,
+   "verified": false,
+   "width_mm": 140.5
+  },
+  "1112,20506": {
+   "height_mm": 153.6,
+   "init_strings": [
+    "BRIQERIAAAA="
+   ],
+   "input_report_length": 8,
+   "max_pressure": 2047,
+   "max_x": 40960,
+   "max_y": 30720,
+   "name": "Genius i608x",
+   "product_id": 20506,
+   "report_parser": "GeniusReportParser",
+   "vendor_id": 1112,
+   "verified": false,
+   "width_mm": 204.8
+  },
+  "1155,24579": {
+   "height_mm": 211.2772,
+   "init_strings": [],
+   "input_report_length": 64,
+   "max_pressure": 1023,
+   "max_x": 22656,
+   "max_y": 16636,
+   "name": "RobotPen T9A",
+   "product_id": 24579,
+   "report_parser": "RobotPenReportParser",
+   "vendor_id": 1155,
+   "verified": false,
+   "width_mm": 287.7312
+  },
+  "1155,40965": {
+   "height_mm": 125.22,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 20320,
+   "max_y": 10160,
+   "name": "Parblo Ninos M",
+   "product_id": 40965,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 1155,
+   "verified": false,
+   "width_mm": 217.1954
+  },
+  "1155,40966": {
+   "height_mm": 104.013,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 24743,
+   "max_y": 16380,
+   "name": "Parblo Ninos S",
+   "product_id": 40966,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 1155,
+   "verified": false,
+   "width_mm": 157.11805
+  },
+  "1155,40979": {
+   "height_mm": 160.0,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 26050,
+   "max_y": 16000,
+   "name": "Parblo Intangbo M",
+   "product_id": 40979,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 1155,
+   "verified": false,
+   "width_mm": 260.5
+  },
+  "1155,40980": {
+   "height_mm": 100.45,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 17306,
+   "max_y": 10045,
+   "name": "Parblo Intangbo S",
+   "product_id": 40980,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 1155,
+   "verified": false,
+   "width_mm": 173.06
+  },
+  "1155,40982": {
+   "height_mm": 102.869,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 16383,
+   "max_x": 28800,
+   "max_y": 16200,
+   "name": "Parblo Intangbo SW",
+   "product_id": 40982,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 1155,
+   "verified": false,
+   "width_mm": 182.88
+  },
+  "1155,40985": {
+   "height_mm": 81.0,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 21600,
+   "max_y": 16200,
+   "name": "Parblo Ninos N4",
+   "product_id": 40985,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 1155,
+   "verified": false,
+   "width_mm": 108.0
+  },
+  "1155,40992": {
+   "height_mm": 111.09,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 25200,
+   "max_y": 15745,
+   "name": "Parblo Ninos N7",
+   "product_id": 40992,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 1155,
+   "verified": false,
+   "width_mm": 177.8
+  },
+  "1155,40994": {
+   "height_mm": 157.5,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 25200,
+   "max_y": 15750,
+   "name": "Parblo A610 Pro (Variant 2)",
+   "product_id": 40994,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 1155,
+   "verified": false,
+   "width_mm": 252.0
+  },
+  "1155,41483": {
+   "height_mm": 114.0,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 28799,
+   "max_y": 16199,
+   "name": "Parblo Ninos N7B",
+   "product_id": 41483,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 1155,
+   "verified": false,
+   "width_mm": 177.8
+  },
+  "1155,42560": {
+   "height_mm": 93.65,
+   "init_strings": [],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 31203,
+   "max_y": 18730,
+   "name": "Parblo A640 V2",
+   "product_id": 42560,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 1155,
+   "verified": false,
+   "width_mm": 156.015
+  },
+  "11648,24577": {
+   "height_mm": 95.0,
+   "init_strings": [
+    "IAE="
+   ],
+   "input_report_length": 64,
+   "max_pressure": 8191,
+   "max_x": 15200,
+   "max_y": 9500,
+   "name": "XENX X1-640",
+   "product_id": 24577,
+   "report_parser": "XENXReportParser",
+   "vendor_id": 11648,
+   "verified": false,
+   "width_mm": 152.0
+  },
+  "11648,8193": {
+   "height_mm": 158.75,
+   "init_strings": [
+    "IAE="
+   ],
+   "input_report_length": 64,
+   "max_pressure": 8191,
+   "max_x": 25400,
+   "max_y": 15875,
+   "name": "XENX P3-1060",
+   "product_id": 8193,
+   "report_parser": "XENXReportParser",
+   "vendor_id": 11648,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "11648,8194": {
+   "height_mm": 105.0,
+   "init_strings": [
+    "IAE="
+   ],
+   "input_report_length": 64,
+   "max_pressure": 8191,
+   "max_x": 16800,
+   "max_y": 10500,
+   "name": "XENX P1-640",
+   "product_id": 8194,
+   "report_parser": "XENXReportParser",
+   "vendor_id": 11648,
+   "verified": false,
+   "width_mm": 168.0
+  },
+  "12267,1": {
+   "height_mm": 101.6,
+   "init_strings": [],
+   "input_report_length": 9,
+   "max_pressure": 8191,
+   "max_x": 30480,
+   "max_y": 20320,
+   "name": "VEIKK S640",
+   "product_id": 1,
+   "report_parser": "VeikkV1ReportParser",
+   "vendor_id": 12267,
+   "verified": false,
+   "width_mm": 152.4
+  },
+  "12267,11": {
+   "height_mm": 158.75,
+   "init_strings": [],
+   "input_report_length": 13,
+   "max_pressure": 8191,
+   "max_x": 50800,
+   "max_y": 31750,
+   "name": "VEIKK Voila (VO1060)",
+   "product_id": 11,
+   "report_parser": "VeikkReportParser",
+   "vendor_id": 12267,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "12267,2": {
+   "height_mm": 152.4,
+   "init_strings": [],
+   "input_report_length": 9,
+   "max_pressure": 8191,
+   "max_x": 50800,
+   "max_y": 30480,
+   "name": "VEIKK A30",
+   "product_id": 2,
+   "report_parser": "SkipByteTabletReportParser",
+   "vendor_id": 12267,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "12267,3": {
+   "height_mm": 152.4,
+   "init_strings": [],
+   "input_report_length": 8,
+   "max_pressure": 8191,
+   "max_x": 50800,
+   "max_y": 30480,
+   "name": "VEIKK A50",
+   "product_id": 3,
+   "report_parser": "VeikkV1ReportParser",
+   "vendor_id": 12267,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "12267,4": {
+   "height_mm": 152.4,
+   "init_strings": [],
+   "input_report_length": 9,
+   "max_pressure": 8191,
+   "max_x": 50800,
+   "max_y": 30480,
+   "name": "VEIKK A15",
+   "product_id": 4,
+   "report_parser": "VeikkA15ReportParser",
+   "vendor_id": 12267,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "12267,4100": {
+   "height_mm": 193.6,
+   "init_strings": [],
+   "input_report_length": 13,
+   "max_pressure": 8191,
+   "max_x": 68840,
+   "max_y": 38720,
+   "name": "XOPPOX D161",
+   "product_id": 4100,
+   "report_parser": "VeikkReportParser",
+   "vendor_id": 12267,
+   "verified": false,
+   "width_mm": 344.2
+  },
+  "12267,4101": {
+   "height_mm": 165.6,
+   "init_strings": [],
+   "input_report_length": 13,
+   "max_pressure": 8191,
+   "max_x": 58880,
+   "max_y": 33120,
+   "name": "VEIKK VK1200",
+   "product_id": 4101,
+   "report_parser": "VeikkTiltReportParser",
+   "vendor_id": 12267,
+   "verified": false,
+   "width_mm": 294.4
+  },
+  "12267,4102": {
+   "height_mm": 268.0,
+   "init_strings": [],
+   "input_report_length": 13,
+   "max_pressure": 16383,
+   "max_x": 95200,
+   "max_y": 53600,
+   "name": "VEIKK VK2200PRO",
+   "product_id": 4102,
+   "report_parser": "VeikkTiltReportParser",
+   "vendor_id": 12267,
+   "verified": false,
+   "width_mm": 476.0
+  },
+  "12267,5": {
+   "height_mm": 101.6,
+   "init_strings": [],
+   "input_report_length": 13,
+   "max_pressure": 8191,
+   "max_x": 30480,
+   "max_y": 20320,
+   "name": "VEIKK VK640",
+   "product_id": 5,
+   "report_parser": "VeikkTiltReportParser",
+   "vendor_id": 12267,
+   "verified": false,
+   "width_mm": 152.4
+  },
+  "12267,6": {
+   "height_mm": 152.4,
+   "init_strings": [],
+   "input_report_length": 9,
+   "max_pressure": 8191,
+   "max_x": 50800,
+   "max_y": 30480,
+   "name": "VEIKK A15 Pro",
+   "product_id": 6,
+   "report_parser": "SkipByteTabletReportParser",
+   "vendor_id": 12267,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "12267,7": {
+   "height_mm": 158.75,
+   "init_strings": [],
+   "input_report_length": 13,
+   "max_pressure": 8191,
+   "max_x": 50800,
+   "max_y": 31750,
+   "name": "VEIKK VK1060PRO",
+   "product_id": 7,
+   "report_parser": "VeikkReportParser",
+   "vendor_id": 12267,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "12267,8": {
+   "height_mm": 158.75,
+   "init_strings": [],
+   "input_report_length": 13,
+   "max_pressure": 8191,
+   "max_x": 50800,
+   "max_y": 31750,
+   "name": "VEIKK VK1060",
+   "product_id": 8,
+   "report_parser": "VeikkTiltReportParser",
+   "vendor_id": 12267,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "12267,9": {
+   "height_mm": 76.2,
+   "init_strings": [],
+   "input_report_length": 13,
+   "max_pressure": 8191,
+   "max_x": 20320,
+   "max_y": 15240,
+   "name": "VEIKK VK430 V2",
+   "product_id": 9,
+   "report_parser": "VeikkReportParser",
+   "vendor_id": 12267,
+   "verified": false,
+   "width_mm": 101.6
+  },
+  "1329,256": {
+   "height_mm": 95.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 192,
+   "max_pressure": 4095,
+   "max_x": 15200,
+   "max_y": 9500,
+   "name": "Wacom CTC-4110WL",
+   "product_id": 256,
+   "report_parser": "IntuosV3ReportParser",
+   "vendor_id": 1329,
+   "verified": false,
+   "width_mm": 152.0
+  },
+  "1329,258": {
+   "height_mm": 135.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 192,
+   "max_pressure": 4095,
+   "max_x": 21600,
+   "max_y": 13500,
+   "name": "Wacom CTC-6110WL",
+   "product_id": 258,
+   "report_parser": "IntuosV3ReportParser",
+   "vendor_id": 1329,
+   "verified": false,
+   "width_mm": 216.0
+  },
+  "1329,259": {
+   "height_mm": 135.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 19,
+   "max_pressure": 4095,
+   "max_x": 21600,
+   "max_y": 13500,
+   "name": "Wacom CTC-6110WL",
+   "product_id": 259,
+   "report_parser": "IntuosV3ReportParser",
+   "vendor_id": 1329,
+   "verified": false,
+   "width_mm": 216.0
+  },
+  "1347,58983": {
+   "height_mm": 106.4,
+   "init_strings": [
+    "AhABAAA="
+   ],
+   "input_report_length": 14,
+   "max_pressure": 4095,
+   "max_x": 16800,
+   "max_y": 10640,
+   "name": "ViewSonic Woodpad PF0730",
+   "product_id": 58983,
+   "report_parser": "WoodPadReportParser",
+   "vendor_id": 1347,
+   "verified": false,
+   "width_mm": 168.0
+  },
+  "1347,58984": {
+   "height_mm": 140.0,
+   "init_strings": [
+    "AhABAAA="
+   ],
+   "input_report_length": 14,
+   "max_pressure": 4095,
+   "max_x": 44800,
+   "max_y": 28000,
+   "name": "ViewSonic Woodpad PF1030",
+   "product_id": 58984,
+   "report_parser": "WoodPadReportParser",
+   "vendor_id": 1347,
+   "verified": false,
+   "width_mm": 224.0
+  },
+  "1386,1008": {
+   "height_mm": 169.24,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 192,
+   "max_pressure": 8191,
+   "max_x": 59552,
+   "max_y": 33848,
+   "name": "Wacom Movink 13 (DTH-135)",
+   "product_id": 1008,
+   "report_parser": "IntuosV3ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 297.76
+  },
+  "1386,101": {
+   "height_mm": 92.25,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 5,
+   "max_pressure": 511,
+   "max_x": 14760,
+   "max_y": 9225,
+   "name": "Wacom MTE-450",
+   "product_id": 101,
+   "report_parser": "TabletReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 147.6
+  },
+  "1386,1013": {
+   "height_mm": 105.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 192,
+   "max_pressure": 8191,
+   "max_x": 37400,
+   "max_y": 21000,
+   "name": "Wacom PTK-470",
+   "product_id": 1013,
+   "report_parser": "IntuosV3ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 187.0
+  },
+  "1386,1015": {
+   "height_mm": 148.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 192,
+   "max_pressure": 8191,
+   "max_x": 52600,
+   "max_y": 29600,
+   "name": "Wacom PTK-670",
+   "product_id": 1015,
+   "report_parser": "IntuosV3ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 263.0
+  },
+  "1386,1017": {
+   "height_mm": 195.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 192,
+   "max_pressure": 8191,
+   "max_x": 69800,
+   "max_y": 39000,
+   "name": "Wacom PTK-870",
+   "product_id": 1017,
+   "report_parser": "IntuosV3ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 349.0
+  },
+  "1386,105": {
+   "height_mm": 92.8,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 8,
+   "max_pressure": 511,
+   "max_x": 5104,
+   "max_y": 3712,
+   "name": "Wacom CTF-430",
+   "product_id": 105,
+   "report_parser": "BambooReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 127.6
+  },
+  "1386,106": {
+   "height_mm": 95.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 8,
+   "max_pressure": 511,
+   "max_x": 15200,
+   "max_y": 9500,
+   "name": "Wacom CTE-460",
+   "product_id": 106,
+   "report_parser": "BambooReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 152.0
+  },
+  "1386,107": {
+   "height_mm": 135.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 8,
+   "max_pressure": 511,
+   "max_x": 21648,
+   "max_y": 13500,
+   "name": "Wacom CTE-660",
+   "product_id": 107,
+   "report_parser": "BambooReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 216.48
+  },
+  "1386,16": {
+   "height_mm": 92.8,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 8,
+   "max_pressure": 511,
+   "max_x": 10208,
+   "max_y": 7424,
+   "name": "Wacom ET-0405-U",
+   "product_id": 16,
+   "report_parser": "GraphireReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 127.6
+  },
+  "1386,17": {
+   "height_mm": 92.8,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 8,
+   "max_pressure": 511,
+   "max_x": 10208,
+   "max_y": 7424,
+   "name": "Wacom ET-0405A-U",
+   "product_id": 17,
+   "report_parser": "GraphireReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 127.6
+  },
+  "1386,176": {
+   "height_mm": 101.6,
+   "init_strings": [
+    "AgI=",
+    "BAA="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2046,
+   "max_x": 25400,
+   "max_y": 20320,
+   "name": "Wacom PTZ-430",
+   "product_id": 176,
+   "report_parser": "Intuos3ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 127.0
+  },
+  "1386,177": {
+   "height_mm": 152.4,
+   "init_strings": [
+    "AgI=",
+    "BAA="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2046,
+   "max_x": 40640,
+   "max_y": 30480,
+   "name": "Wacom PTZ-630",
+   "product_id": 177,
+   "report_parser": "Intuos3ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 203.2
+  },
+  "1386,178": {
+   "height_mm": 228.6,
+   "init_strings": [
+    "AgI=",
+    "BAA="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2046,
+   "max_x": 60960,
+   "max_y": 45720,
+   "name": "Wacom PTZ-930",
+   "product_id": 178,
+   "report_parser": "Intuos3ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 304.8
+  },
+  "1386,179": {
+   "height_mm": 304.8,
+   "init_strings": [
+    "AgI=",
+    "BAA="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2046,
+   "max_x": 60960,
+   "max_y": 60960,
+   "name": "Wacom PTZ-1230",
+   "product_id": 179,
+   "report_parser": "Intuos3ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 304.8
+  },
+  "1386,180": {
+   "height_mm": 304.8,
+   "init_strings": [
+    "AgI=",
+    "BAA="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2046,
+   "max_x": 97536,
+   "max_y": 60960,
+   "name": "Wacom PTZ-1231W",
+   "product_id": 180,
+   "report_parser": "Intuos3ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 487.68
+  },
+  "1386,181": {
+   "height_mm": 158.75,
+   "init_strings": [
+    "AgI=",
+    "BAA="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2046,
+   "max_x": 54204,
+   "max_y": 31750,
+   "name": "Wacom PTZ-631W",
+   "product_id": 181,
+   "report_parser": "Intuos3ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 271.02
+  },
+  "1386,183": {
+   "height_mm": 98.425,
+   "init_strings": [
+    "AgI=",
+    "BAA="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2046,
+   "max_x": 31496,
+   "max_y": 19685,
+   "name": "Wacom PTZ-431W",
+   "product_id": 183,
+   "report_parser": "Intuos3ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 157.48
+  },
+  "1386,184": {
+   "height_mm": 98.425,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 31496,
+   "max_y": 19685,
+   "name": "Wacom PTK-440",
+   "product_id": 184,
+   "report_parser": "Intuos4ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 157.48
+  },
+  "1386,185": {
+   "height_mm": 139.7,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 44704,
+   "max_y": 27940,
+   "name": "Wacom PTK-640",
+   "product_id": 185,
+   "report_parser": "Intuos4ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 223.52
+  },
+  "1386,186": {
+   "height_mm": 203.2,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 65024,
+   "max_y": 40640,
+   "name": "Wacom PTK-840",
+   "product_id": 186,
+   "report_parser": "Intuos4ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 325.12
+  },
+  "1386,187": {
+   "height_mm": 304.8,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 97536,
+   "max_y": 60960,
+   "name": "Wacom PTK-1240",
+   "product_id": 187,
+   "report_parser": "Intuos4ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 487.68
+  },
+  "1386,188": {
+   "height_mm": 127.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 40640,
+   "max_y": 25400,
+   "name": "Wacom PTK-540WL",
+   "product_id": 188,
+   "report_parser": "Intuos4ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 203.2
+  },
+  "1386,19": {
+   "height_mm": 92.8,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 8,
+   "max_pressure": 511,
+   "max_x": 10208,
+   "max_y": 7424,
+   "name": "Wacom CTE-430",
+   "product_id": 19,
+   "report_parser": "GraphireReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 127.6
+  },
+  "1386,198": {
+   "height_mm": 163.2,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2046,
+   "max_x": 52220,
+   "max_y": 32640,
+   "name": "Wacom Cintiq 12WX (DTZ-1200W)",
+   "product_id": 198,
+   "report_parser": "Intuos3ExtraAuxReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 261.1
+  },
+  "1386,20": {
+   "height_mm": 150.8,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 8,
+   "max_pressure": 511,
+   "max_x": 16704,
+   "max_y": 12064,
+   "name": "Wacom CTE-630",
+   "product_id": 20,
+   "report_parser": "GraphireReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 208.8
+  },
+  "1386,204": {
+   "height_mm": 328.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": null,
+   "max_pressure": 2047,
+   "max_x": 87200,
+   "max_y": 65600,
+   "name": "Wacom Cintiq 21UX (DTK-2100)",
+   "product_id": 204,
+   "report_parser": "CintiqV1ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 436.0
+  },
+  "1386,209": {
+   "height_mm": 92.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 20,
+   "max_pressure": 1023,
+   "max_x": 14720,
+   "max_y": 9200,
+   "name": "Wacom CTH-460",
+   "product_id": 209,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 147.2
+  },
+  "1386,21": {
+   "height_mm": 92.8,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 8,
+   "max_pressure": 511,
+   "max_x": 10208,
+   "max_y": 7424,
+   "name": "Wacom CTE-440",
+   "product_id": 21,
+   "report_parser": "GraphireReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 127.6
+  },
+  "1386,210": {
+   "height_mm": 92.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 9,
+   "max_pressure": 1023,
+   "max_x": 14720,
+   "max_y": 9200,
+   "name": "Wacom CTH-461",
+   "product_id": 210,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 147.2
+  },
+  "1386,211": {
+   "height_mm": 137.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 9,
+   "max_pressure": 1023,
+   "max_x": 21648,
+   "max_y": 13700,
+   "name": "Wacom CTH-661",
+   "product_id": 211,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 216.48
+  },
+  "1386,212": {
+   "height_mm": 92.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 9,
+   "max_pressure": 1023,
+   "max_x": 14720,
+   "max_y": 9200,
+   "name": "Wacom CTL-460",
+   "product_id": 212,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 147.2
+  },
+  "1386,214": {
+   "height_mm": 92.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 9,
+   "max_pressure": 1023,
+   "max_x": 14720,
+   "max_y": 9200,
+   "name": "Wacom CTH-460",
+   "product_id": 214,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 147.2
+  },
+  "1386,215": {
+   "height_mm": 92.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 9,
+   "max_pressure": 1023,
+   "max_x": 14720,
+   "max_y": 9200,
+   "name": "Wacom CTH-461",
+   "product_id": 215,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 147.2
+  },
+  "1386,216": {
+   "height_mm": 137.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 9,
+   "max_pressure": 1023,
+   "max_x": 21648,
+   "max_y": 13700,
+   "name": "Wacom CTH-661",
+   "product_id": 216,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 216.48
+  },
+  "1386,218": {
+   "height_mm": 92.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 9,
+   "max_pressure": 1023,
+   "max_x": 14720,
+   "max_y": 9200,
+   "name": "Wacom CTH-461",
+   "product_id": 218,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 147.2
+  },
+  "1386,219": {
+   "height_mm": 137.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 9,
+   "max_pressure": 1023,
+   "max_x": 21648,
+   "max_y": 13700,
+   "name": "Wacom CTH-661",
+   "product_id": 219,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 216.48
+  },
+  "1386,22": {
+   "height_mm": 150.8,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 8,
+   "max_pressure": 511,
+   "max_x": 16704,
+   "max_y": 12064,
+   "name": "Wacom CTE-640",
+   "product_id": 22,
+   "report_parser": "GraphireReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 208.8
+  },
+  "1386,221": {
+   "height_mm": 92.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 1023,
+   "max_x": 14720,
+   "max_y": 9200,
+   "name": "Wacom CTL-470",
+   "product_id": 221,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 147.2
+  },
+  "1386,222": {
+   "height_mm": 92.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 1023,
+   "max_x": 14720,
+   "max_y": 9200,
+   "name": "Wacom CTH-470",
+   "product_id": 222,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 147.2
+  },
+  "1386,223": {
+   "height_mm": 137.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 1023,
+   "max_x": 21648,
+   "max_y": 13700,
+   "name": "Wacom CTH-670",
+   "product_id": 223,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 216.48
+  },
+  "1386,23": {
+   "height_mm": 92.25,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 9,
+   "max_pressure": 511,
+   "max_x": 14760,
+   "max_y": 9225,
+   "name": "Wacom CTE-450",
+   "product_id": 23,
+   "report_parser": "BambooReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 147.6
+  },
+  "1386,24": {
+   "height_mm": 135.3,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 9,
+   "max_pressure": 511,
+   "max_x": 21648,
+   "max_y": 13530,
+   "name": "Wacom CTE-650",
+   "product_id": 24,
+   "report_parser": "BambooReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 216.48
+  },
+  "1386,249": {
+   "height_mm": 271.3,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 5,
+   "max_pressure": 2047,
+   "max_x": 95040,
+   "max_y": 54260,
+   "name": "Wacom Cintiq 22HD (DTK-2200)",
+   "product_id": 249,
+   "report_parser": "CintiqV1ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 475.2
+  },
+  "1386,250": {
+   "height_mm": 271.3,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 95040,
+   "max_y": 54260,
+   "name": "Wacom Cintiq 22HD (DTK-2200)",
+   "product_id": 250,
+   "report_parser": "CintiqV1ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 475.2
+  },
+  "1386,3": {
+   "height_mm": 153.6,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 8,
+   "max_pressure": 511,
+   "max_x": 20480,
+   "max_y": 15360,
+   "name": "Wacom PTU-600U",
+   "product_id": 3,
+   "report_parser": "PTUReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 204.8
+  },
+  "1386,32": {
+   "height_mm": 106.0,
+   "init_strings": [
+    "BAA="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2046,
+   "max_x": 25400,
+   "max_y": 21200,
+   "name": "Wacom GD-0405-U",
+   "product_id": 32,
+   "report_parser": "IntuosV1ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 127.0
+  },
+  "1386,33": {
+   "height_mm": 162.4,
+   "init_strings": [
+    "BAA="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2046,
+   "max_x": 40640,
+   "max_y": 32480,
+   "name": "Wacom GD-0608-U",
+   "product_id": 33,
+   "report_parser": "IntuosV1ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 203.2
+  },
+  "1386,34": {
+   "height_mm": 240.6,
+   "init_strings": [
+    "BAA="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2046,
+   "max_x": 60960,
+   "max_y": 48120,
+   "name": "Wacom GD-0912-U",
+   "product_id": 34,
+   "report_parser": "IntuosV1ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 304.8
+  },
+  "1386,35": {
+   "height_mm": 316.8,
+   "init_strings": [
+    "BAA="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2046,
+   "max_x": 60960,
+   "max_y": 63360,
+   "name": "Wacom GD-1212-U",
+   "product_id": 35,
+   "report_parser": "IntuosV1ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 304.8
+  },
+  "1386,36": {
+   "height_mm": 316.8,
+   "init_strings": [
+    "BAA="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2046,
+   "max_x": 91440,
+   "max_y": 63360,
+   "name": "Wacom GD-1218-U",
+   "product_id": 36,
+   "report_parser": "IntuosV1ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 457.2
+  },
+  "1386,38": {
+   "height_mm": 98.425,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 31496,
+   "max_y": 19685,
+   "name": "Wacom PTH-450",
+   "product_id": 38,
+   "report_parser": "IntuosProReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 157.48
+  },
+  "1386,39": {
+   "height_mm": 139.7,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 44704,
+   "max_y": 27940,
+   "name": "Wacom PTH-650",
+   "product_id": 39,
+   "report_parser": "IntuosProReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 223.52
+  },
+  "1386,40": {
+   "height_mm": 203.2,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 65024,
+   "max_y": 40640,
+   "name": "Wacom PTH-850",
+   "product_id": 40,
+   "report_parser": "IntuosProReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 325.12
+  },
+  "1386,41": {
+   "height_mm": 98.425,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 31496,
+   "max_y": 19685,
+   "name": "Wacom PTK-450",
+   "product_id": 41,
+   "report_parser": "IntuosProReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 157.48
+  },
+  "1386,42": {
+   "height_mm": 139.7,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 44704,
+   "max_y": 27940,
+   "name": "Wacom PTK-650",
+   "product_id": 42,
+   "report_parser": "IntuosProReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 223.52
+  },
+  "1386,53": {
+   "height_mm": 289.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 8,
+   "max_pressure": 511,
+   "max_x": 7220,
+   "max_y": 5780,
+   "name": "Wacom Cintiq 18SX (PL-800-U)",
+   "product_id": 53,
+   "report_parser": "PLReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 361.0
+  },
+  "1386,63": {
+   "height_mm": 328.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2046,
+   "max_x": 87200,
+   "max_y": 65600,
+   "name": "Wacom Cintiq 21UX (DTZ-2100)",
+   "product_id": 63,
+   "report_parser": "Intuos3ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 436.0
+  },
+  "1386,65": {
+   "height_mm": 106.0,
+   "init_strings": [
+    "AgI=",
+    "BAA="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2046,
+   "max_x": 25400,
+   "max_y": 21200,
+   "name": "Wacom XD-0405-U",
+   "product_id": 65,
+   "report_parser": "IntuosV1ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 127.0
+  },
+  "1386,66": {
+   "height_mm": 162.4,
+   "init_strings": [
+    "AgI=",
+    "BAA="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2046,
+   "max_x": 40640,
+   "max_y": 32480,
+   "name": "Wacom XD-0608-U",
+   "product_id": 66,
+   "report_parser": "IntuosV1ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 203.2
+  },
+  "1386,67": {
+   "height_mm": 240.6,
+   "init_strings": [
+    "AgI=",
+    "BAA="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2046,
+   "max_x": 60960,
+   "max_y": 48120,
+   "name": "Wacom XD-0912-U",
+   "product_id": 67,
+   "report_parser": "IntuosV1ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 304.8
+  },
+  "1386,68": {
+   "height_mm": 316.8,
+   "init_strings": [
+    "AgI=",
+    "BAA="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2046,
+   "max_x": 60960,
+   "max_y": 63360,
+   "name": "Wacom XD-1212-U",
+   "product_id": 68,
+   "report_parser": "IntuosV1ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 304.8
+  },
+  "1386,69": {
+   "height_mm": 316.8,
+   "init_strings": [
+    "AgI=",
+    "BAA="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2046,
+   "max_x": 91440,
+   "max_y": 63360,
+   "name": "Wacom XD-1218-U",
+   "product_id": 69,
+   "report_parser": "IntuosV1ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 457.2
+  },
+  "1386,768": {
+   "height_mm": 95.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 1023,
+   "max_x": 15200,
+   "max_y": 9500,
+   "name": "Wacom CTL-471",
+   "product_id": 768,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 152.0
+  },
+  "1386,769": {
+   "height_mm": 135.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 1023,
+   "max_x": 21600,
+   "max_y": 13500,
+   "name": "Wacom CTL-671",
+   "product_id": 769,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 216.0
+  },
+  "1386,770": {
+   "height_mm": 95.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 1023,
+   "max_x": 15200,
+   "max_y": 9500,
+   "name": "Wacom CTH-480",
+   "product_id": 770,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 152.0
+  },
+  "1386,771": {
+   "height_mm": 135.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 1023,
+   "max_x": 21600,
+   "max_y": 13500,
+   "name": "Wacom CTH-680",
+   "product_id": 771,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 216.0
+  },
+  "1386,772": {
+   "height_mm": 171.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 59800,
+   "max_y": 34200,
+   "name": "Wacom Cintiq 13HD (DTK-1300)",
+   "product_id": 772,
+   "report_parser": "IntuosV1ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 299.0
+  },
+  "1386,782": {
+   "height_mm": 95.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 1023,
+   "max_x": 15200,
+   "max_y": 9500,
+   "name": "Wacom CTL-480",
+   "product_id": 782,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 152.0
+  },
+  "1386,788": {
+   "height_mm": 98.425,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 31496,
+   "max_y": 19685,
+   "name": "Wacom PTH-451",
+   "product_id": 788,
+   "report_parser": "IntuosProReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 157.48
+  },
+  "1386,789": {
+   "height_mm": 139.7,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 44704,
+   "max_y": 27940,
+   "name": "Wacom PTH-651",
+   "product_id": 789,
+   "report_parser": "IntuosProReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 223.52
+  },
+  "1386,791": {
+   "height_mm": 203.2,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 65024,
+   "max_y": 40640,
+   "name": "Wacom PTH-851",
+   "product_id": 791,
+   "report_parser": "IntuosProReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 325.12
+  },
+  "1386,792": {
+   "height_mm": 66.8,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 64,
+   "max_pressure": 511,
+   "max_x": 10690,
+   "max_y": 6680,
+   "name": "Wacom CTH-301",
+   "product_id": 792,
+   "report_parser": "BambooPadReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 106.9
+  },
+  "1386,793": {
+   "height_mm": 66.8,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 32,
+   "max_pressure": 511,
+   "max_x": 10690,
+   "max_y": 6680,
+   "name": "Wacom CTH-300",
+   "product_id": 793,
+   "report_parser": "BambooPadReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 106.9
+  },
+  "1386,803": {
+   "height_mm": 135.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 1023,
+   "max_x": 21600,
+   "max_y": 13500,
+   "name": "Wacom CTL-680",
+   "product_id": 803,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 216.0
+  },
+  "1386,827": {
+   "height_mm": 95.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 15200,
+   "max_y": 9500,
+   "name": "Wacom CTL-490",
+   "product_id": 827,
+   "report_parser": "IntuosV1ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 152.0
+  },
+  "1386,828": {
+   "height_mm": 95.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 15200,
+   "max_y": 9500,
+   "name": "Wacom CTH-490",
+   "product_id": 828,
+   "report_parser": "IntuosV1ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 152.0
+  },
+  "1386,829": {
+   "height_mm": 135.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 21600,
+   "max_y": 13500,
+   "name": "Wacom CTL-690",
+   "product_id": 829,
+   "report_parser": "IntuosV1ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 216.0
+  },
+  "1386,830": {
+   "height_mm": 135.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 21600,
+   "max_y": 13500,
+   "name": "Wacom CTH-690",
+   "product_id": 830,
+   "report_parser": "IntuosV1ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 216.0
+  },
+  "1386,847": {
+   "height_mm": 169.24,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 192,
+   "max_pressure": 8191,
+   "max_x": 59552,
+   "max_y": 33848,
+   "name": "Wacom DTH-1320",
+   "product_id": 847,
+   "report_parser": "IntuosV2ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 297.76
+  },
+  "1386,855": {
+   "height_mm": 148.0,
+   "init_strings": [],
+   "input_report_length": 192,
+   "max_pressure": 8191,
+   "max_x": 44800,
+   "max_y": 29600,
+   "name": "Wacom PTH-660",
+   "product_id": 855,
+   "report_parser": "IntuosV2ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 224.0
+  },
+  "1386,856": {
+   "height_mm": 216.0,
+   "init_strings": [],
+   "input_report_length": 192,
+   "max_pressure": 8191,
+   "max_x": 62200,
+   "max_y": 43200,
+   "name": "Wacom PTH-860",
+   "product_id": 856,
+   "report_parser": "IntuosV2ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 311.0
+  },
+  "1386,864": {
+   "height_mm": 148.0,
+   "init_strings": [],
+   "input_report_length": 361,
+   "max_pressure": 8191,
+   "max_x": 44800,
+   "max_y": 29600,
+   "name": "Wacom PTH-660",
+   "product_id": 864,
+   "report_parser": "TabletReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 224.0
+  },
+  "1386,884": {
+   "height_mm": 95.0,
+   "init_strings": [],
+   "input_report_length": 192,
+   "max_pressure": 4095,
+   "max_x": 15200,
+   "max_y": 9500,
+   "name": "Wacom CTL-4100",
+   "product_id": 884,
+   "report_parser": "IntuosV2ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 152.0
+  },
+  "1386,885": {
+   "height_mm": 135.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 192,
+   "max_pressure": 4095,
+   "max_x": 21600,
+   "max_y": 13500,
+   "name": "Wacom CTL-6100",
+   "product_id": 885,
+   "report_parser": "IntuosV2ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 216.0
+  },
+  "1386,886": {
+   "height_mm": 95.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 64,
+   "max_pressure": 4095,
+   "max_x": 15200,
+   "max_y": 9500,
+   "name": "Wacom CTL-4100WL",
+   "product_id": 886,
+   "report_parser": "IntuosV2ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 152.0
+  },
+  "1386,887": {
+   "height_mm": 95.0,
+   "init_strings": [],
+   "input_report_length": 193,
+   "max_pressure": 4095,
+   "max_x": 15200,
+   "max_y": 9500,
+   "name": "Wacom CTL-4100WL",
+   "product_id": 887,
+   "report_parser": "WacomDriverIntuosV2ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 152.0
+  },
+  "1386,888": {
+   "height_mm": 135.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 192,
+   "max_pressure": 4095,
+   "max_x": 21600,
+   "max_y": 13500,
+   "name": "Wacom CTL-6100WL",
+   "product_id": 888,
+   "report_parser": "IntuosV2ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 216.0
+  },
+  "1386,890": {
+   "height_mm": 95.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 15200,
+   "max_y": 9500,
+   "name": "Wacom CTL-472",
+   "product_id": 890,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 152.0
+  },
+  "1386,891": {
+   "height_mm": 135.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 21600,
+   "max_y": 13500,
+   "name": "Wacom CTL-672",
+   "product_id": 891,
+   "report_parser": "IntuosReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 216.0
+  },
+  "1386,91": {
+   "height_mm": 271.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 95600,
+   "max_y": 54200,
+   "name": "Wacom Cintiq 22HD Touch (DTH-2200)",
+   "product_id": 91,
+   "report_parser": "CintiqV1ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 478.0
+  },
+  "1386,912": {
+   "height_mm": 197.59,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 192,
+   "max_pressure": 8191,
+   "max_x": 69632,
+   "max_y": 39518,
+   "name": "Wacom Cintiq 16 (DTK-1660)",
+   "product_id": 912,
+   "report_parser": "IntuosV2ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 348.16
+  },
+  "1386,914": {
+   "height_mm": 99.75,
+   "init_strings": [
+    0
+   ],
+   "input_report_length": 192,
+   "max_pressure": 8191,
+   "max_x": 31920,
+   "max_y": 19950,
+   "name": "Wacom PTH-460",
+   "product_id": 914,
+   "report_parser": "IntuosV2ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 159.6
+  },
+  "1386,934": {
+   "height_mm": 165.56,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 192,
+   "max_pressure": 4095,
+   "max_x": 29434,
+   "max_y": 16556,
+   "name": "Wacom DTC-133",
+   "product_id": 934,
+   "report_parser": "IntuosV2ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 294.34
+  },
+  "1386,942": {
+   "height_mm": 197.59,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 192,
+   "max_pressure": 8191,
+   "max_x": 69632,
+   "max_y": 39518,
+   "name": "Wacom Cintiq 16 (DTK-1660)",
+   "product_id": 942,
+   "report_parser": "IntuosV2ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 348.16
+  },
+  "1386,96": {
+   "height_mm": 92.8,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 8,
+   "max_pressure": 511,
+   "max_x": 5104,
+   "max_y": 3712,
+   "name": "Wacom FT-0405-U",
+   "product_id": 96,
+   "report_parser": "BambooReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 127.6
+  },
+  "1386,960": {
+   "height_mm": 339.34,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 192,
+   "max_pressure": 8191,
+   "max_x": 120032,
+   "max_y": 67868,
+   "name": "Wacom Cintiq Pro 27 (DTH-271)",
+   "product_id": 960,
+   "report_parser": "IntuosV2ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 600.16
+  },
+  "1386,965": {
+   "height_mm": 95.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 192,
+   "max_pressure": 4095,
+   "max_x": 15200,
+   "max_y": 9500,
+   "name": "Wacom CTL-4100WL",
+   "product_id": 965,
+   "report_parser": "IntuosV2ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 152.0
+  },
+  "1386,967": {
+   "height_mm": 135.0,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 192,
+   "max_pressure": 4095,
+   "max_x": 21600,
+   "max_y": 13500,
+   "name": "Wacom CTL-6100WL",
+   "product_id": 967,
+   "report_parser": "IntuosV2ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 216.0
+  },
+  "1386,974": {
+   "height_mm": 144.18,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 192,
+   "max_pressure": 4095,
+   "max_x": 25632,
+   "max_y": 14418,
+   "name": "Wacom DTC-121",
+   "product_id": 974,
+   "report_parser": "IntuosV2ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 256.32
+  },
+  "1386,976": {
+   "height_mm": 271.78,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 192,
+   "max_pressure": 8191,
+   "max_x": 96012,
+   "max_y": 54356,
+   "name": "Wacom Cintiq Pro 22 (DTH-227)",
+   "product_id": 976,
+   "report_parser": "IntuosV2ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 480.06
+  },
+  "1386,988": {
+   "height_mm": 99.75,
+   "init_strings": [
+    0
+   ],
+   "input_report_length": 192,
+   "max_pressure": 8191,
+   "max_x": 31920,
+   "max_y": 19950,
+   "name": "Wacom PTH-460",
+   "product_id": 988,
+   "report_parser": "IntuosV2ReportParser",
+   "vendor_id": 1386,
+   "verified": false,
+   "width_mm": 159.6
+  },
+  "21827,113": {
+   "height_mm": 158.75,
+   "init_strings": [
+    100
+   ],
+   "input_report_length": 8,
+   "max_pressure": 2047,
+   "max_x": 40000,
+   "max_y": 25000,
+   "name": "UC-Logic TWMNA62",
+   "product_id": 113,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 21827,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "21827,129": {
+   "height_mm": 152.4,
+   "init_strings": [
+    100,
+    123
+   ],
+   "input_report_length": 8,
+   "max_pressure": 2047,
+   "max_x": 40000,
+   "max_y": 24000,
+   "name": "Parblo A610",
+   "product_id": 129,
+   "report_parser": "XP_PenOffsetAuxReportParser",
+   "vendor_id": 21827,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "21827,130": {
+   "height_mm": 152.4,
+   "init_strings": [],
+   "input_report_length": 11,
+   "max_pressure": 8191,
+   "max_x": 50800,
+   "max_y": 30480,
+   "name": "Acepen AP1060",
+   "product_id": 130,
+   "report_parser": "AcepenReportParser",
+   "vendor_id": 21827,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "21827,145": {
+   "height_mm": 142.24,
+   "init_strings": [],
+   "input_report_length": 11,
+   "max_pressure": 8191,
+   "max_x": 45974,
+   "max_y": 28448,
+   "name": "Acepen AP906",
+   "product_id": 145,
+   "report_parser": "AcepenReportParser",
+   "vendor_id": 21827,
+   "verified": false,
+   "width_mm": 229.87
+  },
+  "21827,1921": {
+   "height_mm": 158.74365,
+   "init_strings": [
+    100
+   ],
+   "input_report_length": 8,
+   "max_pressure": 1023,
+   "max_x": 39999,
+   "max_y": 24999,
+   "name": "Monoprice MP1060-HA60",
+   "product_id": 1921,
+   "report_parser": "UCLogicReportParser",
+   "vendor_id": 21827,
+   "verified": false,
+   "width_mm": 253.99365
+  },
+  "21827,4": {
+   "height_mm": 101.5873,
+   "init_strings": [
+    100
+   ],
+   "input_report_length": 8,
+   "max_pressure": 1023,
+   "max_x": 10999,
+   "max_y": 7999,
+   "name": "KENTING K5540",
+   "product_id": 4,
+   "report_parser": "UCLogicReportParser",
+   "vendor_id": 21827,
+   "verified": false,
+   "width_mm": 139.6873
+  },
+  "21827,66": {
+   "height_mm": 228.59365,
+   "init_strings": [
+    109
+   ],
+   "input_report_length": 8,
+   "max_pressure": 1023,
+   "max_x": 47999,
+   "max_y": 35999,
+   "name": "UC-Logic PF1209",
+   "product_id": 66,
+   "report_parser": "UCLogicReportParser",
+   "vendor_id": 21827,
+   "verified": false,
+   "width_mm": 304.79365
+  },
+  "21827,71": {
+   "height_mm": 268.225,
+   "init_strings": [
+    100
+   ],
+   "input_report_length": 8,
+   "max_pressure": 2047,
+   "max_x": 38161,
+   "max_y": 21458,
+   "name": "XP-Pen Artist 22HD",
+   "product_id": 71,
+   "report_parser": "XP_PenReportParser",
+   "vendor_id": 21827,
+   "verified": false,
+   "width_mm": 477.0125
+  },
+  "21827,74": {
+   "height_mm": 135.6,
+   "init_strings": [
+    123
+   ],
+   "input_report_length": 8,
+   "max_pressure": 2047,
+   "max_x": 21696,
+   "max_y": 13560,
+   "name": "XP-Pen Artist 10S",
+   "product_id": 74,
+   "report_parser": "UCLogicV1ReportParser",
+   "vendor_id": 21827,
+   "verified": false,
+   "width_mm": 216.96
+  },
+  "21827,77": {
+   "height_mm": 193.59,
+   "init_strings": [
+    100,
+    123
+   ],
+   "input_report_length": 8,
+   "max_pressure": 2047,
+   "max_x": 34416,
+   "max_y": 19359,
+   "name": "XP-Pen Artist 16",
+   "product_id": 77,
+   "report_parser": "XP_PenOffsetAuxReportParser",
+   "vendor_id": 21827,
+   "verified": false,
+   "width_mm": 344.16
+  },
+  "21827,80": {
+   "height_mm": 127.0,
+   "init_strings": [
+    100,
+    123
+   ],
+   "input_report_length": 8,
+   "max_pressure": 2047,
+   "max_x": 32000,
+   "max_y": 20000,
+   "name": "XP-Pen Star 02",
+   "product_id": 80,
+   "report_parser": "UCLogicReportParser",
+   "vendor_id": 21827,
+   "verified": false,
+   "width_mm": 203.2
+  },
+  "21827,84": {
+   "height_mm": 99.3,
+   "init_strings": [],
+   "input_report_length": 64,
+   "max_pressure": 2047,
+   "max_x": 15900,
+   "max_y": 9930,
+   "name": "Artisul AP604",
+   "product_id": 84,
+   "report_parser": "TabletReportParser",
+   "vendor_id": 21827,
+   "verified": false,
+   "width_mm": 159.0
+  },
+  "21827,97": {
+   "height_mm": 85.85,
+   "init_strings": [
+    100
+   ],
+   "input_report_length": 10,
+   "max_pressure": 8191,
+   "max_x": 29616,
+   "max_y": 17170,
+   "name": "Parblo A640",
+   "product_id": 97,
+   "report_parser": "TabletReportParser",
+   "vendor_id": 21827,
+   "verified": false,
+   "width_mm": 148.08
+  },
+  "2250,16": {
+   "height_mm": 224.95,
+   "init_strings": [
+    "AhgE",
+    "AgIA",
+    "AgMA",
+    "AgQA",
+    "AgEA",
+    "AgEB",
+    "AggA",
+    "AhAB",
+    "AhEC"
+   ],
+   "input_report_length": 8,
+   "max_pressure": 1023,
+   "max_x": 5999,
+   "max_y": 4499,
+   "name": "LifeTec LT9570",
+   "product_id": 16,
+   "report_parser": "LifetecReportParser",
+   "vendor_id": 2250,
+   "verified": false,
+   "width_mm": 299.95
+  },
+  "24929,19733": {
+   "height_mm": 167.955,
+   "init_strings": [
+    200
+   ],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 53889,
+   "max_y": 33591,
+   "name": "LetSketch WP9620C",
+   "product_id": 19733,
+   "report_parser": "UCLogicTiltReportParser",
+   "vendor_id": 24929,
+   "verified": false,
+   "width_mm": 269.445
+  },
+  "2578,16391": {
+   "height_mm": 196.596,
+   "init_strings": [],
+   "input_report_length": 12,
+   "max_pressure": 32767,
+   "max_x": 20640,
+   "max_y": 15480,
+   "name": "FlooGoo FMA100",
+   "product_id": 16391,
+   "report_parser": "FmaReportParser",
+   "vendor_id": 2578,
+   "verified": false,
+   "width_mm": 262.128
+  },
+  "2903,37009": {
+   "height_mm": 139.7,
+   "init_strings": [
+    "AgI="
+   ],
+   "input_report_length": 10,
+   "max_pressure": 2047,
+   "max_x": 44704,
+   "max_y": 27940,
+   "name": "Parblo A609",
+   "product_id": 37009,
+   "report_parser": "IntuosV1ReportParser",
+   "vendor_id": 2903,
+   "verified": false,
+   "width_mm": 223.52
+  },
+  "3793,30753": {
+   "height_mm": 65.024,
+   "init_strings": [
+    100,
+    123
+   ],
+   "input_report_length": 16,
+   "max_pressure": 8191,
+   "max_x": 17920,
+   "max_y": 10240,
+   "name": "Bosto BT-12HD",
+   "product_id": 30753,
+   "report_parser": "BostoReportParser",
+   "vendor_id": 3793,
+   "verified": false,
+   "width_mm": 113.792
+  },
+  "5935,50": {
+   "height_mm": 76.2,
+   "init_strings": [
+    "AgQA",
+    "AgIA",
+    "AhAB"
+   ],
+   "input_report_length": 8,
+   "max_pressure": 1023,
+   "max_x": 10000,
+   "max_y": 6000,
+   "name": "Waltop Slim Tablet 5.8\"",
+   "product_id": 50,
+   "report_parser": "GeniusReportParserV2",
+   "vendor_id": 5935,
+   "verified": false,
+   "width_mm": 127.0
+  },
+  "5935,55": {
+   "height_mm": 115.2,
+   "init_strings": [
+    "AgQA",
+    "AgIA",
+    "AhAB"
+   ],
+   "input_report_length": 64,
+   "max_pressure": 1023,
+   "max_x": 12288,
+   "max_y": 9216,
+   "name": "Trust Flex Design Tablet",
+   "product_id": 55,
+   "report_parser": "GeniusReportParserV2",
+   "vendor_id": 5935,
+   "verified": false,
+   "width_mm": 153.6
+  },
+  "5935,56": {
+   "height_mm": 136.5504,
+   "init_strings": [
+    "AgQA",
+    "AgIA",
+    "AhAB"
+   ],
+   "input_report_length": 64,
+   "max_pressure": 1023,
+   "max_x": 17920,
+   "max_y": 10752,
+   "name": "Genius G-Pen F509",
+   "product_id": 56,
+   "report_parser": "GeniusReportParserV2",
+   "vendor_id": 5935,
+   "verified": false,
+   "width_mm": 227.584
+  },
+  "9580,100": {
+   "height_mm": 171.55,
+   "init_strings": [
+    200
+   ],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 51690,
+   "max_y": 34310,
+   "name": "Artisul A1201",
+   "product_id": 100,
+   "report_parser": "UCLogicTiltReportParser",
+   "vendor_id": 9580,
+   "verified": false,
+   "width_mm": 258.45
+  },
+  "9580,102": {
+   "height_mm": 100.0,
+   "init_strings": [
+    200
+   ],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 32000,
+   "max_y": 20000,
+   "name": "Huion H641P",
+   "product_id": 102,
+   "report_parser": "InspiroyReportParser",
+   "vendor_id": 9580,
+   "verified": false,
+   "width_mm": 160.0
+  },
+  "9580,103": {
+   "height_mm": 138.0,
+   "init_strings": [
+    200
+   ],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 44200,
+   "max_y": 27600,
+   "name": "Huion H951P",
+   "product_id": 103,
+   "report_parser": "InspiroyReportParser",
+   "vendor_id": 9580,
+   "verified": false,
+   "width_mm": 221.0
+  },
+  "9580,104": {
+   "height_mm": 166.7,
+   "init_strings": [
+    200
+   ],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 53340,
+   "max_y": 33340,
+   "name": "Huion H1061P",
+   "product_id": 104,
+   "report_parser": "UCLogicTiltReportParser",
+   "vendor_id": 9580,
+   "verified": false,
+   "width_mm": 266.7
+  },
+  "9580,107": {
+   "height_mm": 230.03,
+   "init_strings": [
+    200
+   ],
+   "input_report_length": 14,
+   "max_pressure": 16383,
+   "max_x": 81792,
+   "max_y": 46006,
+   "name": "Huion Kamvas Pro 19 (4K)",
+   "product_id": 107,
+   "report_parser": "GianoReportParser",
+   "vendor_id": 9580,
+   "verified": false,
+   "width_mm": 408.96
+  },
+  "9580,108": {
+   "height_mm": 296.45,
+   "init_strings": [
+    200
+   ],
+   "input_report_length": 14,
+   "max_pressure": 16383,
+   "max_x": 105408,
+   "max_y": 59290,
+   "name": "Huion Kamvas Pro 24 (Gen 3)",
+   "product_id": 108,
+   "report_parser": "GianoReportParser",
+   "vendor_id": 9580,
+   "verified": false,
+   "width_mm": 527.04
+  },
+  "9580,109": {
+   "height_mm": 120.0,
+   "init_strings": [
+    200
+   ],
+   "input_report_length": 8,
+   "max_pressure": 2047,
+   "max_x": 32000,
+   "max_y": 24000,
+   "name": "Gaomon S56K",
+   "product_id": 109,
+   "report_parser": "TabletReportParser",
+   "vendor_id": 9580,
+   "verified": false,
+   "width_mm": 160.0
+  },
+  "9580,110": {
+   "height_mm": 120.0,
+   "init_strings": [
+    200
+   ],
+   "input_report_length": 8,
+   "max_pressure": 2047,
+   "max_x": 32000,
+   "max_y": 24000,
+   "name": "Gaomon S56K",
+   "product_id": 110,
+   "report_parser": "TabletReportParser",
+   "vendor_id": 9580,
+   "verified": false,
+   "width_mm": 160.0
+  },
+  "9580,111": {
+   "height_mm": 161.49,
+   "init_strings": [
+    100
+   ],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 51475,
+   "max_y": 32298,
+   "name": "Artisul M0610 Pro",
+   "product_id": 111,
+   "report_parser": "TabletReportParser",
+   "vendor_id": 9580,
+   "verified": false,
+   "width_mm": 257.375
+  },
+  "9580,8192": {
+   "height_mm": 193.6,
+   "init_strings": [
+    200
+   ],
+   "input_report_length": 14,
+   "max_pressure": 16383,
+   "max_x": 68840,
+   "max_y": 38720,
+   "name": "Huion Kamvas Pro 16 V2",
+   "product_id": 8192,
+   "report_parser": "GianoReportParser",
+   "vendor_id": 9580,
+   "verified": false,
+   "width_mm": 344.2
+  },
+  "9580,8193": {
+   "height_mm": 268.225,
+   "init_strings": [
+    200
+   ],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 95352,
+   "max_y": 53645,
+   "name": "Huion RDS-220",
+   "product_id": 8193,
+   "report_parser": "GianoReportParser",
+   "vendor_id": 9580,
+   "verified": false,
+   "width_mm": 476.76
+  },
+  "9580,8196": {
+   "height_mm": 158.75,
+   "init_strings": [
+    200
+   ],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 50800,
+   "max_y": 31750,
+   "name": "Gaomon 1060 Pro",
+   "product_id": 8196,
+   "report_parser": "UCLogicTiltReportParser",
+   "vendor_id": 9580,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "9580,8200": {
+   "height_mm": 165.2,
+   "init_strings": [
+    200
+   ],
+   "input_report_length": 14,
+   "max_pressure": 16383,
+   "max_x": 58760,
+   "max_y": 33040,
+   "name": "Huion Kamvas 13 (Gen 3)",
+   "product_id": 8200,
+   "report_parser": "GianoReportParser",
+   "vendor_id": 9580,
+   "verified": false,
+   "width_mm": 293.8
+  },
+  "9580,8201": {
+   "height_mm": 196.7,
+   "init_strings": [
+    200
+   ],
+   "input_report_length": 14,
+   "max_pressure": 16383,
+   "max_x": 69920,
+   "max_y": 39340,
+   "name": "Huion Kamvas 16 (Gen 3)",
+   "product_id": 8201,
+   "report_parser": "GianoReportParser",
+   "vendor_id": 9580,
+   "verified": false,
+   "width_mm": 349.6
+  },
+  "9580,8209": {
+   "height_mm": 100.0,
+   "init_strings": [
+    200
+   ],
+   "input_report_length": 12,
+   "max_pressure": 16383,
+   "max_x": 32000,
+   "max_y": 20000,
+   "name": "Huion L310",
+   "product_id": 8209,
+   "report_parser": "InspiroyReportParser",
+   "vendor_id": 9580,
+   "verified": false,
+   "width_mm": 160.0
+  },
+  "9580,8210": {
+   "height_mm": 158.75,
+   "init_strings": [
+    200
+   ],
+   "input_report_length": 12,
+   "max_pressure": 16383,
+   "max_x": 50800,
+   "max_y": 31750,
+   "name": "Huion L610",
+   "product_id": 8210,
+   "report_parser": "UCLogicTiltReportParser",
+   "vendor_id": 9580,
+   "verified": false,
+   "width_mm": 254.0
+  },
+  "9580,96": {
+   "height_mm": 166.7,
+   "init_strings": [
+    200
+   ],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 53340,
+   "max_y": 33340,
+   "name": "Huion Q630M",
+   "product_id": 96,
+   "report_parser": "GianoReportParser",
+   "vendor_id": 9580,
+   "verified": false,
+   "width_mm": 266.7
+  },
+  "9580,97": {
+   "height_mm": 215.9,
+   "init_strings": [
+    200
+   ],
+   "input_report_length": 12,
+   "max_pressure": 8191,
+   "max_x": 69088,
+   "max_y": 43180,
+   "name": "Huion G930L",
+   "product_id": 97,
+   "report_parser": "GianoReportParser",
+   "vendor_id": 9580,
+   "verified": false,
+   "width_mm": 345.44
+  }
+ }
+}

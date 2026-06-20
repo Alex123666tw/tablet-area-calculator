@@ -34,12 +34,10 @@ except ImportError:
     win32gui = None
 
 # ==================== Tablet Hardware Detection ====================
-TABLET_SPECS = {
-    # Only the CTL-4100 has been validated on real hardware. The other entries
-    # carry Wacom's published physical specs as best-effort estimates, but their
-    # raw HID packet format (report id / byte layout) is UNVERIFIED — they are
-    # flagged verified: False so the UI can warn the user before they trust the
-    # output. See README "支援與限制".
+# Curated, hand-maintained specs. Only the CTL-4100 has been validated on real
+# hardware (verified: True). The other Wacom entries are kept as an offline
+# fallback in case tablet_db.json is missing; they stay verified: False.
+_BUILTIN_SPECS = {
     (0x056A, 0x0374): {'name': 'Wacom Intuos S (CTL-4100)', 'max_x': 15200, 'max_y': 9500, 'width_mm': 152.0, 'height_mm': 95.0, 'verified': True},
     (0x056A, 0x0375): {'name': 'Wacom Intuos M (CTL-6100)', 'max_x': 21600, 'max_y': 13500, 'width_mm': 216.0, 'height_mm': 135.0, 'verified': False},
     (0x056A, 0x0376): {'name': 'Wacom Intuos S BT (CTL-4100WL)', 'max_x': 15200, 'max_y': 9500, 'width_mm': 152.0, 'height_mm': 95.0, 'verified': False},
@@ -49,6 +47,53 @@ TABLET_SPECS = {
 }
 
 WACOM_VENDOR_ID = 0x056A
+
+
+def _tablet_db_path():
+    # Works from source and from a PyInstaller --onefile bundle.
+    base = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
+    return os.path.join(base, "tablet_db.json")
+
+
+def _load_tablet_db():
+    """Best-effort load of the OpenTabletDriver-derived spec table.
+
+    Returns {(vid, pid): spec}. Every entry is verified: False — this is breadth
+    data (correct physical specs for ~250 tablets), not hardware validation.
+    Never raises; a missing/corrupt file just falls back to the built-in specs.
+    Data derived from OpenTabletDriver (LGPL-3.0); see NOTICE.
+    """
+    specs = {}
+    try:
+        with open(_tablet_db_path(), encoding="utf-8") as fh:
+            data = json.load(fh)
+        for key, e in (data.get("tablets") or {}).items():
+            try:
+                vid_s, pid_s = key.split(",")
+                vid, pid = int(vid_s), int(pid_s)
+            except (ValueError, AttributeError):
+                continue
+            specs[(vid, pid)] = {
+                "name": e.get("name", f"Tablet {key}"),
+                "max_x": e.get("max_x", 15200),
+                "max_y": e.get("max_y", 9500),
+                "width_mm": float(e.get("width_mm", 152.0)),
+                "height_mm": float(e.get("height_mm", 95.0)),
+                "verified": False,
+            }
+    except Exception:
+        pass
+    return specs
+
+
+def _build_tablet_specs():
+    specs = _load_tablet_db()       # broad coverage, all unverified
+    specs.update(_BUILTIN_SPECS)    # curated entries (incl. verified CTL-4100) win
+    return specs
+
+
+# Merged at import time: OpenTabletDriver breadth + curated/verified overrides.
+TABLET_SPECS = _build_tablet_specs()
 
 class TabletDetector:
     @staticmethod

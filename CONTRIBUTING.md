@@ -22,7 +22,8 @@ python -m pip install -r requirements-dev.txt
 - `otd_area_calculator.py` 是唯一主程式。
 - 早期版本與診斷腳本已移除，歷史保留在 Git commit 紀錄；請直接修改主程式。
 - 不要提交 `build/`、`dist/`、`__pycache__/`、`.atlas/` 或本機硬體診斷輸出。
-- 新增手寫板型號時，請附上 VID/PID、實體尺寸與驗證方式。
+- `tablet_db.json` 由 `tools/import_otd_configs.py` 從 OpenTabletDriver 設定產生，**請勿手動編輯**；要更新請重跑該腳本。
+- 只有實機驗證過的型號才能標記 `verified: True`（目前僅 CTL-4100）。新增已驗證型號時請附上 VID/PID、實體尺寸與驗證方式。
 
 ## 本機檢查
 

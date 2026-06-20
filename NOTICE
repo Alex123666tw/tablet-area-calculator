@@ -1,0 +1,23 @@
+OTD Area Calculator
+Copyright (c) 2026 Alex123666tw
+Licensed under the MIT License (see LICENSE).
+
+------------------------------------------------------------------------
+Third-party data
+------------------------------------------------------------------------
+
+tablet_db.json contains factual tablet parameters (model name, USB
+vendor/product IDs, physical dimensions, maximum coordinate values,
+maximum pressure, HID input report length, and report-parser family
+names). These values are derived from the OpenTabletDriver configuration
+database.
+
+    OpenTabletDriver
+    https://github.com/OpenTabletDriver/OpenTabletDriver
+    Licensed under the GNU Lesser General Public License v3.0 (LGPL-3.0)
+
+Only factual hardware parameters are reproduced; no OpenTabletDriver
+source code is included or distributed in this project. To regenerate
+tablet_db.json from an OpenTabletDriver checkout, run:
+
+    python tools/import_otd_configs.py <path-to>/OpenTabletDriver.Configurations/Configurations

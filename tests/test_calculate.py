@@ -55,3 +55,10 @@ def test_only_ctl4100_is_marked_verified():
     assert all(not spec['verified']
                for key, spec in TABLET_SPECS.items() if key != ctl4100)
     assert TabletDetector._unknown()['verified'] is False
+
+
+def test_tablet_db_breadth_loaded():
+    # The OpenTabletDriver-derived spec table should add broad coverage beyond
+    # the handful of built-in entries.
+    from otd_area_calculator import TABLET_SPECS
+    assert len(TABLET_SPECS) > 100
