@@ -45,3 +45,13 @@ def test_ratio_locked_area_stays_within_tablet():
     assert res['x_offset_mm'] + res['width_mm'] / 2 <= 152.0 + 0.01
     assert res['y_offset_mm'] - res['height_mm'] / 2 >= -0.01
     assert res['y_offset_mm'] + res['height_mm'] / 2 <= 95.0 + 0.01
+
+
+def test_only_ctl4100_is_marked_verified():
+    # Honesty invariant: only hardware we actually tested may claim verified.
+    from otd_area_calculator import TABLET_SPECS, TabletDetector
+    ctl4100 = (0x056A, 0x0374)
+    assert TABLET_SPECS[ctl4100]['verified'] is True
+    assert all(not spec['verified']
+               for key, spec in TABLET_SPECS.items() if key != ctl4100)
+    assert TabletDetector._unknown()['verified'] is False

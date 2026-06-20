@@ -28,19 +28,25 @@ OTD Area Calculator 是一個 Windows 桌面工具，用來協助 osu! 玩家根
 
 ## 支援與限制
 
-目前內建規格表包含：
+**已實機驗證：**
 
-- Wacom Intuos S CTL-4100
-- Wacom Intuos M CTL-6100
-- Wacom Intuos S BT CTL-4100WL
-- Wacom One S CTL-472
-- Wacom One M CTL-672
+- **Wacom Intuos S (CTL-4100)** — 唯一在真實硬體上測試過的型號。
+
+**未驗證**（程式仍可偵測並提供估計值，但封包格式未經實機確認，數值僅供參考，歡迎回報）：
+
+- Wacom Intuos M (CTL-6100)
+- Wacom Intuos S BT (CTL-4100WL)
+- Wacom One S (CTL-472)
+- Wacom One M (CTL-672)
+- 其他 Wacom 型號（套用通用估計值）
+
+偵測到非 CTL-4100 型號時，程式介面會顯示未驗證警告，計算結果也會附註提醒。
 
 限制：
 
 - 目前僅支援 Windows。
 - HID 裝置可能被 Wacom 驅動、OpenTabletDriver 或其他工具獨佔，導致程式無法連線。
-- 不同手寫板韌體或驅動狀態可能回報不同封包格式，未知型號需要實機驗證。
+- 未驗證型號的封包格式（report ID、位元組布局）可能與 CTL-4100 不同，導致座標解析錯誤。
 
 ## 安裝
 

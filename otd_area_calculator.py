@@ -35,13 +35,17 @@ except ImportError:
 
 # ==================== Tablet Hardware Detection ====================
 TABLET_SPECS = {
-    # Wacom Intuos (CTL-4100 / 6100)
-    (0x056A, 0x0374): {'name': 'Wacom Intuos S (CTL-4100)', 'max_x': 15200, 'max_y': 9500, 'width_mm': 152.0, 'height_mm': 95.0},
-    (0x056A, 0x0375): {'name': 'Wacom Intuos M (CTL-6100)', 'max_x': 21600, 'max_y': 13500, 'width_mm': 216.0, 'height_mm': 135.0},
-    (0x056A, 0x0376): {'name': 'Wacom Intuos S BT (CTL-4100WL)', 'max_x': 15200, 'max_y': 9500, 'width_mm': 152.0, 'height_mm': 95.0},
+    # Only the CTL-4100 has been validated on real hardware. The other entries
+    # carry Wacom's published physical specs as best-effort estimates, but their
+    # raw HID packet format (report id / byte layout) is UNVERIFIED — they are
+    # flagged verified: False so the UI can warn the user before they trust the
+    # output. See README "支援與限制".
+    (0x056A, 0x0374): {'name': 'Wacom Intuos S (CTL-4100)', 'max_x': 15200, 'max_y': 9500, 'width_mm': 152.0, 'height_mm': 95.0, 'verified': True},
+    (0x056A, 0x0375): {'name': 'Wacom Intuos M (CTL-6100)', 'max_x': 21600, 'max_y': 13500, 'width_mm': 216.0, 'height_mm': 135.0, 'verified': False},
+    (0x056A, 0x0376): {'name': 'Wacom Intuos S BT (CTL-4100WL)', 'max_x': 15200, 'max_y': 9500, 'width_mm': 152.0, 'height_mm': 95.0, 'verified': False},
     # Wacom One (CTL-472 / 672)
-    (0x056A, 0x037A): {'name': 'Wacom One S (CTL-472)', 'max_x': 15200, 'max_y': 9500, 'width_mm': 152.0, 'height_mm': 95.0},
-    (0x056A, 0x037B): {'name': 'Wacom One M (CTL-672)', 'max_x': 21600, 'max_y': 13500, 'width_mm': 216.0, 'height_mm': 135.0},
+    (0x056A, 0x037A): {'name': 'Wacom One S (CTL-472)', 'max_x': 15200, 'max_y': 9500, 'width_mm': 152.0, 'height_mm': 95.0, 'verified': False},
+    (0x056A, 0x037B): {'name': 'Wacom One M (CTL-672)', 'max_x': 21600, 'max_y': 13500, 'width_mm': 216.0, 'height_mm': 135.0, 'verified': False},
 }
 
 WACOM_VENDOR_ID = 0x056A
@@ -78,6 +82,7 @@ class TabletDetector:
                     'vendor_id': vid, 'product_id': pid,
                     'max_x': 15200, 'max_y': 9500,
                     'width_mm': 152.0, 'height_mm': 95.0,
+                    'verified': False,
                 }
 
         return TabletDetector._unknown()
@@ -89,6 +94,7 @@ class TabletDetector:
             'vendor_id': None, 'product_id': None,
             'max_x': 15200, 'max_y': 9500,
             'width_mm': 152.0, 'height_mm': 95.0,
+            'verified': False,
         }
 
 # ==================== Multi-Threaded HID Engine ====================
@@ -594,10 +600,16 @@ class ApplicationWindow(QMainWindow):
         self.lbl_name = QLabel(f"裝置：{self.tablet_info['name']}")
         self.lbl_name.setStyleSheet("font-weight: bold; color: #fff;")
 
+        self.lbl_unverified = QLabel("⚠️ 未驗證型號：封包格式未經實機確認，數值僅供參考，歡迎回報")
+        self.lbl_unverified.setWordWrap(True)
+        self.lbl_unverified.setStyleSheet("background-color: #4d3a00; color: #ffd34d; border: 1px solid #806000; border-radius: 4px; padding: 6px;")
+        self.lbl_unverified.setVisible(not self.tablet_info.get('verified', False))
+
         self.lbl_dyn_max = QLabel("原始邊界：(正在校準中...)")
         self.lbl_dyn_max.setStyleSheet("color: #00ff88;")
 
         il.addWidget(self.lbl_name)
+        il.addWidget(self.lbl_unverified)
         il.addWidget(self.lbl_dyn_max)
 
         btn_refresh = QPushButton("重新偵測裝置")
@@ -683,6 +695,7 @@ class ApplicationWindow(QMainWindow):
         self.hid_thread.stop()
         self.tablet_info = TabletDetector.detect()
         self.lbl_name.setText(f"裝置：{self.tablet_info['name']}")
+        self.lbl_unverified.setVisible(not self.tablet_info.get('verified', False))
 
         self.hid_thread = HIDPollingThread(self.tablet_info)
         self.recorder = SmartRecorder(self.tablet_info)
@@ -794,13 +807,15 @@ class ApplicationWindow(QMainWindow):
 
         self.canvas.overlay_result(res)
 
+        warn = "" if self.tablet_info.get('verified', False) else \
+            "\n\n⚠️ 此型號未經實機驗證，套用前請自行確認。"
         self._log(f"✨ 最佳鏡設區域計算結果:\n\n"
                   f" 寬度 (Width): {res['width_mm']} mm\n"
                   f" 高度 (Height): {res['height_mm']} mm\n"
                   f" X 軸偏移 (X): {res['x_offset_mm']} mm\n"
                   f" Y 軸偏移 (Y): {res['y_offset_mm']} mm\n\n"
                   f"(已過濾雜訊點: {res['total_points'] - res['used_points']}\n"
-                  f"最大偵測邊界: {int(max_x)} x {int(max_y)})")
+                  f"最大偵測邊界: {int(max_x)} x {int(max_y)})" + warn)
 
     def _reset_all(self):
         self.recorder.clear_all()
