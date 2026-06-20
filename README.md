@@ -37,6 +37,7 @@ OTD Area Calculator 是一個 Windows 桌面工具，用來協助 osu! 玩家根
 - 內建約 250 款手寫板的規格（型號、VID/PID、尺寸、最大座標），資料來自 OpenTabletDriver，涵蓋 Wacom、Huion、XP-Pen、UGEE、Gaomon、VEIKK 等品牌。
 - 這些型號偵測得到、實體尺寸正確，但**封包格式未經實機確認**：目前實際座標讀取僅對 Wacom raw 格式有效，其他品牌的通用解析尚在進行中。
 - 偵測到非 CTL-4100 型號時，介面會顯示未驗證警告，計算結果也會附註提醒，歡迎回報實測結果。
+- 想協助驗證你的型號？用 `tools/dump_tablet.py` dump 出封包格式並回報（見 `docs/ROADMAP.md`）。
 
 限制：
 
@@ -91,10 +92,12 @@ python -m pip install -r requirements-dev.txt
 otd_area_calculator.py         # 主程式
 tablet_db.json                 # 手寫板規格資料庫（由 OTD 設定產生）
 tools/import_otd_configs.py    # 從 OTD 設定重新產生 tablet_db.json
+tools/dump_tablet.py           # 診斷工具：dump HID descriptor 與原始報表
 requirements.txt               # 執行期依賴
 requirements-dev.txt           # 開發/打包依賴
 build_exe.bat                  # PyInstaller 打包腳本
 tests/                         # 單元測試
+docs/ROADMAP.md                # 進度與通用解析路線圖
 NOTICE                         # 第三方資料出處與授權
 ```
 

@@ -38,3 +38,15 @@ python -m pytest -q
 - 手寫板是否可被偵測。
 - 自動/手動錄製是否能收集筆尖座標。
 - 計算結果是否可套用到 OpenTabletDriver。
+
+## 回報新手寫板型號
+
+如果你有未列為「已驗證」的手寫板，歡迎協助擴充支援：
+
+```powershell
+python tools/dump_tablet.py --list                  # 找出你的裝置
+python tools/dump_tablet.py --raw 40 --wacom-mode   # Wacom：dump descriptor + 原始報表
+python tools/dump_tablet.py --raw 40                 # 其他品牌
+```
+
+把輸出開成 issue 附上。請勿把原始 dump 直接 commit（見 `SECURITY.md`）。
