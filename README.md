@@ -13,7 +13,6 @@ OTD Area Calculator 是一個 Windows 桌面工具，用來協助 osu! 玩家根
 - 目標工具：OpenTabletDriver
 - CI 會在 Windows 上自動執行語法編譯、模組匯入與純計算邏輯單元測試；硬體相關行為仍需實機驗證。
 
-早期的開發版本（v1–v5 與診斷腳本）已從主分支移除，完整歷史保留在 Git commit 紀錄中。
 
 ## 功能
 
