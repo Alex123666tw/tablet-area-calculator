@@ -83,7 +83,7 @@ python -m pip install -r requirements-dev.txt
 .\build_exe.bat
 ```
 
-產物會輸出到 `dist/`。`dist/` 與 `build/` 是本機建置產物，不應提交到 Git。
+產物會輸出到 `dist/`。
 
 ## 專案結構
 
