@@ -12,6 +12,7 @@ __pycache__/
 
 # Virtual environments
 .venv/
+.venv-audit/
 venv/
 env/
 
@@ -28,6 +29,8 @@ detected_tablets.txt
 
 # Local tool indexes and agent work artifacts
 .atlas/
+.work/
+tests/output/
 .agents/work_reports/
 AGENTS.md
 

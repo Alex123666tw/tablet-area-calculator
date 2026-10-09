@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: Syntax, import and unit tests
+    name: Application tests and Windows package
     runs-on: windows-latest
 
     steps:
@@ -23,11 +23,25 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt -r requirements-dev.txt
 
-      - name: Compile all Python files
-        run: python -m compileall -q .
+      - name: Compile product, tools and tests
+        run: python -m compileall -q otd_area_calculator.py tablet_input.py area_analysis.py area_canvas.py tools tests -x 'tests[\\/]output[\\/]'
 
       - name: Import smoke test
         run: python -c "import otd_area_calculator"
 
       - name: Run unit tests
         run: python -m pytest -q
+
+      - name: Build Windows executable
+        run: python tools/build_app.py
+
+      - name: Verify packaged database and product modules
+        run: |
+          @'
+          from PyInstaller.archive.readers import CArchiveReader
+          archive = CArchiveReader('dist/OTD_Area_Calculator.exe')
+          assert any(name.endswith('tablet_db.json') for name in archive.toc)
+          modules = archive.open_embedded_archive('PYZ.pyz').toc
+          assert {'tablet_input', 'area_analysis', 'area_canvas', 'numpy', 'win32con'} <= set(modules)
+          assert any(name.startswith('hid.') and name.endswith('.pyd') for name in archive.toc)
+          '@ | python -
