@@ -1,33 +1,36 @@
 # Roadmap & Status
 
-階段性進度報告與後續規劃。
+## 目前可用的流程
 
-## 現況（已完成）
+從 `python otd_area_calculator.py` 或 `dist/OTD_Area_Calculator.exe` 啟動，錄製筆尖活動，停止後計算毫米區域。預設包含感應範圍內的懸空軌跡，也可只錄製觸板資料。自動模式會累積連續歌曲；清空或改變錄製條件後重新收集。
 
-- **單一主程式**：`otd_area_calculator.py`；移除舊版 v1–v5 與重複實作、診斷腳本。
-- **穩定性修正**：HID 開啟移到 worker thread（消除 race）、即時軌跡節流到 ~120 Hz 並對軌跡設上限、比例鎖夾住板邊、收斂裸 `except`。
-- **依賴與 CI**：`requirements.txt` 補齊 `numpy`；CI 在 Windows 上跑 `compile → import → pytest`，並升級 actions（消除 Node 20 警告）。
-- **誠實的型號支援**：只有 **Wacom Intuos S (CTL-4100)** 經實機驗證（`verified: True`）；偵測到其他型號會在 UI 顯示未驗證警告、計算結果也附註提醒。
-- **手寫板資料庫**：`tablet_db.json` 內含約 250 款手寫板的事實規格（型號、VID/PID、尺寸、最大座標），衍生自 OpenTabletDriver（見 `NOTICE`），開機載入並自動辨識型號與尺寸。
+- **輸入**：`tablet_input.py` 負責裝置、報表解析、錄製與停止。使用型號規格中的固定座標尺度，拒絕超出尺度的座標；不以筆跡或雜訊擴大板子範圍。
+- **計算**：`area_analysis.py` 使用空間分布計算 IQR，降低長時間停留與微抖對範圍的偏移。長寬比在毫米空間套用，保持正尺寸與板內邊界；若比例無法同時涵蓋軌跡與板子，縮小結果並提示覆蓋限制。
+- **預覽**：`area_canvas.py` 批次呈現有界路徑，結果框只有一個。畫布預覽節流不會丟棄錄製批次中的有效座標。
+- **介面**：入口負責模式、刷新、斷線與結果狀態。修改條件或重新錄製時舊結果失效；等待裝置停止時不銷毀尚在執行的執行緒，介面保持回應。
+- **工具與建置**：無效匯入保留舊資料庫；打包使用專案絕對路徑與獨立暫存目錄，驗證候選產物後才替換舊執行檔。Windows CI 包含模組編譯、Qt 流程、計算、輸入與工具測試及打包檢查。
 
-## 下一步：通用座標解析 (Phase A)
+錄製使用空間分格保留代表點與邊界點，最多保留 655,360 個樣本。介面中的點數是保留樣本數，不是收到的全部封包數。此工具提供根據軌跡的建議範圍，仍需玩家套用後確認手感。
 
-目前實際的**座標讀取**只對 Wacom raw 格式有效（report `0x10`、24-bit）。資料庫雖能辨識約 250 款手寫板的規格，但其他品牌還無法真正讀到座標。計畫：
+複製功能輸出 OTD 區域片段：`Width`、`Height`、`XPosition`、`YPosition`、`Rotation`。它不是完整 OTD 設定檔；可依結果手動填入區域欄位，完整設定匯入仍需另行驗證。
 
-1. **收集真實資料**（現在）：用 `tools/dump_tablet.py` dump 出各型號的 HID report descriptor 與原始報表。
-2. **通用 digitizer 解析**：解析 report descriptor，自動取得 X/Y/壓力的位元位置與邏輯/實體範圍，對標準 HID digitizer 通用；Wacom raw 路徑保留為 fallback。
-3. **逐一驗證**：每個型號需實機確認後才能標記 `verified: True`。
+## 已驗證與尚待驗證
 
-> 註：Wacom 在 raw mode 下，descriptor 描述的可能是標準 digitizer 報表而非 `0x10` raw 報表，因此 Phase A 一定要先有實機 dump 才能正確實作。
+只有 **Wacom Intuos S（CTL-4100）** 的已知 HID 介面啟用錄製。2026-10-09 實機確認了懸空、觸板、計算及正常停止；尚未完成同時執行 OTD 與實際 osu! 遊玩的驗收。驅動若獨佔 HID，裝置開啟仍可能失敗。
 
-## 回報一個型號 / 貢獻資料
+`tablet_db.json` 約 250 款規格來自 OpenTabletDriver（見 [`NOTICE`](../NOTICE)）。辨識型號與具有可用解析器是不同能力；其他型號目前會提示尚未支援錄製，不套用 CTL-4100 的封包布局猜測座標。
 
-如果你的手寫板顯示「未驗證」，歡迎協助擴充：
+## 後續：更多型號與通用解析
 
-```bash
-python tools/dump_tablet.py --list                  # 先找出你的裝置
-python tools/dump_tablet.py --raw 40 --wacom-mode   # Wacom
-python tools/dump_tablet.py --raw 40                 # 其他品牌
+1. 收集各型號的 HID report descriptor 與少量原始報表，確認介面、座標、壓力與感應狀態。
+2. 為已知布局新增解析器，或實作以 descriptor 為依據的通用 digitizer 解析。這項能力尚未完成。
+3. 每個型號實機驗證後，才可標記 `verified: True`。
+
+## 回報型號
+
+```powershell
+python tools/dump_tablet.py --list
+python tools/dump_tablet.py --vid 0x056A --pid 0x0374 --raw 40
 ```
 
-把輸出（descriptor + 幾筆原始報表）貼到 issue。**請勿把 dump 直接 commit 進 repo**（見 `SECURITY.md`）。
+更換 VID/PID 為列舉到的目標，避免讀取其他裝置。只有明確要診斷 Wacom 模式切換時才加 `--wacom-mode`；該選項會發送 feature report，正常錄製不需要它。請依 [`SECURITY.md`](../SECURITY.md) 檢查輸出，勿將個人原始 dump 直接提交。

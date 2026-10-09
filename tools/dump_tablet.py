@@ -18,11 +18,10 @@ SECURITY.md do NOT commit dump output into the repo — paste/share it directly.
 """
 import argparse
 import json
+import math
 import os
 import sys
 import time
-
-import hid
 
 WACOM_VENDOR_ID = 0x056A
 DIGITIZER_USAGE_PAGE = 0x000D
@@ -76,15 +75,20 @@ def pick_tablet(devices, known):
 
 
 def open_device(dev):
+    import hid
     h = hid.device()
     try:
-        h.open_path(dev.get("path"))
+        if dev.get("path"):
+            h.open_path(dev["path"])
+        else:
+            h.open(dev.get("vendor_id"), dev.get("product_id"))
     except Exception:
-        h.open(dev.get("vendor_id"), dev.get("product_id"))
+        h.close()
+        raise
     return h
 
 
-def main():
+def main(argv=None):
     ap = argparse.ArgumentParser(description="Dump tablet HID descriptor and raw reports.")
     ap.add_argument("--list", action="store_true", help="list all HID interfaces and exit")
     ap.add_argument("--vid", type=lambda s: int(s, 0), help="vendor id, e.g. 0x056A")
@@ -92,19 +96,35 @@ def main():
     ap.add_argument("--raw", type=int, default=0, metavar="N", help="capture N raw reports (move the pen)")
     ap.add_argument("--wacom-mode", action="store_true", help="send Wacom feature report [0x02,0x02] first")
     ap.add_argument("--timeout", type=float, default=15.0, help="seconds to wait for raw reports")
-    args = ap.parse_args()
+    args = ap.parse_args(argv)
+    if (args.vid is None) != (args.pid is None):
+        ap.error("--vid and --pid must be supplied together")
+    if any(v is not None and not 0 <= v <= 65535 for v in (args.vid, args.pid)):
+        ap.error("--vid and --pid must be between 0 and 65535")
+    if not 0 <= args.raw <= 10000:
+        ap.error("--raw must be between 0 and 10000")
+    if not math.isfinite(args.timeout) or not 0 < args.timeout <= 300:
+        ap.error("--timeout must be finite and between 0 and 300 seconds")
+    if args.list and (args.raw or args.wacom_mode):
+        ap.error("--list cannot be combined with capture or --wacom-mode")
 
     known = load_known()
     try:
+        import hid
         devices = list(hid.enumerate(0, 0))
     except Exception as exc:
-        print(f"[error] hid.enumerate failed: {exc}")
+        print(f"[error] hid.enumerate failed ({type(exc).__name__})", file=sys.stderr)
         return 1
     if not devices:
         print("[error] no HID devices found.")
         return 1
 
     if args.list:
+        if args.vid is not None:
+            devices = [d for d in devices if d.get("vendor_id") == args.vid and d.get("product_id") == args.pid]
+            if not devices:
+                print("[error] no matching HID interfaces found", file=sys.stderr)
+                return 1
         cmd_list(devices, known)
         return 0
 
@@ -120,6 +140,9 @@ def main():
         return 1
 
     vid, pid, up, us, prod, tag = describe(dev, known)
+    if args.wacom_mode and vid != WACOM_VENDOR_ID:
+        print("[error] --wacom-mode is supported only for Wacom devices", file=sys.stderr)
+        return 1
     print("=" * 64)
     print(f"device : 0x{vid:04X}:0x{pid:04X}  {prod}  {('[' + tag + ']') if tag else ''}")
     print(f"interface: usage_page=0x{up:04X} usage=0x{us:04X}")
@@ -128,46 +151,56 @@ def main():
     try:
         h = open_device(dev)
     except Exception as exc:
-        print(f"[error] could not open device: {exc}")
+        print(f"[error] could not open device ({type(exc).__name__})", file=sys.stderr)
         print("        (it may be held by the Wacom driver / OpenTabletDriver — close those first)")
         return 1
 
+    failed = False
     try:
         try:
             desc = h.get_report_descriptor()
+            if not desc:
+                raise ValueError("empty report descriptor")
             print(f"\n--- REPORT DESCRIPTOR ({len(desc)} bytes) ---")
             print(hexbytes(desc))
         except Exception as exc:
-            print(f"[warn] get_report_descriptor failed: {exc}")
+            print(f"[error] get_report_descriptor failed ({type(exc).__name__})", file=sys.stderr)
+            failed = True
 
         if args.wacom_mode:
             try:
                 h.send_feature_report([0x02, 0x02])
                 print("\n[info] sent Wacom feature report [0x02, 0x02]")
             except Exception as exc:
-                print(f"[warn] feature report failed: {exc}")
+                print(f"[error] feature report failed ({type(exc).__name__})", file=sys.stderr)
+                return 1
 
         if args.raw > 0:
             h.set_nonblocking(True)
             print(f"\n--- RAW REPORTS (move the pen; capturing up to {args.raw}) ---")
-            got, start = 0, time.time()
-            while got < args.raw and (time.time() - start) < args.timeout:
+            got, start = 0, time.monotonic()
+            while got < args.raw and (time.monotonic() - start) < args.timeout:
                 data = h.read(64)
                 if data:
                     print(f"[{len(data):3d}B] {hexbytes(data)}")
                     got += 1
                 else:
                     time.sleep(0.002)
-            if got == 0:
-                print("[warn] no reports captured — is the pen touching/hovering the tablet?")
+            if got < args.raw:
+                print(f"[error] capture timed out: {got}/{args.raw} reports received", file=sys.stderr)
+                failed = True
 
-        print("\n[done] paste the output above to share for analysis.")
+        if not failed:
+            print("\n[done] review the output before sharing for analysis.")
+    except Exception as exc:
+        print(f"[error] capture failed ({type(exc).__name__})", file=sys.stderr)
+        failed = True
     finally:
         try:
             h.close()
         except Exception:
             pass
-    return 0
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":
